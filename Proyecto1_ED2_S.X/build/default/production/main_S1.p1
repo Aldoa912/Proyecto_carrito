@@ -79,8 +79,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 229: extern volatile unsigned char PORTB __attribute__((address(0x006)));
 [v _PORTB `Vuc ~T0 @X0 0 e@6 ]
 [p mainexit ]
-"56 main_S1.c
-[; ;main_S1.c: 56: void setup(void);
+"57 main_S1.c
+[; ;main_S1.c: 57: void setup(void);
 [v _setup `(v ~T0 @X0 0 ef ]
 "12 ./configSensorUltrasonico.h
 [; ;./configSensorUltrasonico.h: 12: float medir_distancia(void);
@@ -367,186 +367,186 @@ Version 4.0 HI-TECH Software Intermediate Code
 "51 main_S1.c
 [; ;main_S1.c: 51: float distancia;
 [v _distancia `f ~T0 @X0 1 e ]
-"53
-[; ;main_S1.c: 53: uint8_t z;
-[v _z `uc ~T0 @X0 1 e ]
 "54
 [; ;main_S1.c: 54: uint8_t dato;
 [v _dato `uc ~T0 @X0 1 e ]
+"55
+[; ;main_S1.c: 55: uint8_t z;
+[v _z `uc ~T0 @X0 1 e ]
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"61
-[; ;main_S1.c: 61: void __attribute__((picinterrupt(("")))) isr(void){
+"62
+[; ;main_S1.c: 62: void __attribute__((picinterrupt(("")))) isr(void){
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"62
-[; ;main_S1.c: 62:    if(PIR1bits.SSPIF == 1){
+"63
+[; ;main_S1.c: 63:    if(PIR1bits.SSPIF == 1){
 [e $ ! == -> . . _PIR1bits 0 3 `i -> 1 `i 140  ]
 {
-"64
-[; ;main_S1.c: 64:         SSPCONbits.CKP = 0;
+"65
+[; ;main_S1.c: 65:         SSPCONbits.CKP = 0;
 [e = . . _SSPCONbits 0 1 -> -> 0 `i `uc ]
-"66
-[; ;main_S1.c: 66:         if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
+"67
+[; ;main_S1.c: 67:         if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
 [e $ ! || != -> . . _SSPCONbits 0 3 `i -> 0 `i != -> . . _SSPCONbits 0 4 `i -> 0 `i 141  ]
 {
-"67
-[; ;main_S1.c: 67:             z = SSPBUF;
-[e = _z _SSPBUF ]
 "68
-[; ;main_S1.c: 68:             SSPCONbits.SSPOV = 0;
-[e = . . _SSPCONbits 0 3 -> -> 0 `i `uc ]
+[; ;main_S1.c: 68:             z = SSPBUF;
+[e = _z _SSPBUF ]
 "69
-[; ;main_S1.c: 69:             SSPCONbits.WCOL = 0;
-[e = . . _SSPCONbits 0 4 -> -> 0 `i `uc ]
+[; ;main_S1.c: 69:             SSPCONbits.SSPOV = 0;
+[e = . . _SSPCONbits 0 3 -> -> 0 `i `uc ]
 "70
-[; ;main_S1.c: 70:             SSPCONbits.CKP = 1;
-[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+[; ;main_S1.c: 70:             SSPCONbits.WCOL = 0;
+[e = . . _SSPCONbits 0 4 -> -> 0 `i `uc ]
 "71
-[; ;main_S1.c: 71:         }
+[; ;main_S1.c: 71:             SSPCONbits.CKP = 1;
+[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+"72
+[; ;main_S1.c: 72:         }
 }
 [e :U 141 ]
-"73
-[; ;main_S1.c: 73:         if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
+"74
+[; ;main_S1.c: 74:         if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
 [e $ ! && ! != -> . . _SSPSTATbits 0 5 `i -> 0 `i ! != -> . . _SSPSTATbits 0 2 `i -> 0 `i 142  ]
 {
-"75
-[; ;main_S1.c: 75:             z = SSPBUF;
+"76
+[; ;main_S1.c: 76:             z = SSPBUF;
 [e = _z _SSPBUF ]
-"77
-[; ;main_S1.c: 77:             PIR1bits.SSPIF = 0;
-[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
 "78
-[; ;main_S1.c: 78:             SSPCONbits.CKP = 1;
-[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+[; ;main_S1.c: 78:             PIR1bits.SSPIF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
 "79
-[; ;main_S1.c: 79:             while(!SSPSTATbits.BF);
+[; ;main_S1.c: 79:             SSPCONbits.CKP = 1;
+[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+"80
+[; ;main_S1.c: 80:             while(!SSPSTATbits.BF);
 [e $U 143  ]
 [e :U 144 ]
 [e :U 143 ]
 [e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 144  ]
 [e :U 145 ]
-"80
-[; ;main_S1.c: 80:             PORTD = SSPBUF;
-[e = _PORTD _SSPBUF ]
 "81
-[; ;main_S1.c: 81:             _delay((unsigned long)((250)*(8000000/4000000.0)));
+[; ;main_S1.c: 81:             PORTD = SSPBUF;
+[e = _PORTD _SSPBUF ]
+"82
+[; ;main_S1.c: 82:             _delay((unsigned long)((250)*(8000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"83
-[; ;main_S1.c: 83:         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
+"84
+[; ;main_S1.c: 84:         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
 }
 [e $U 146  ]
 [e :U 142 ]
 [e $ ! && ! != -> . . _SSPSTATbits 0 5 `i -> 0 `i != -> . . _SSPSTATbits 0 2 `i -> 0 `i 147  ]
 {
-"84
-[; ;main_S1.c: 84:             z = SSPBUF;
-[e = _z _SSPBUF ]
 "85
-[; ;main_S1.c: 85:             BF = 0;
-[e = _BF -> -> 0 `i `b ]
+[; ;main_S1.c: 85:             z = SSPBUF;
+[e = _z _SSPBUF ]
 "86
-[; ;main_S1.c: 86:             SSPBUF = PORTB;
-[e = _SSPBUF _PORTB ]
+[; ;main_S1.c: 86:             BF = 0;
+[e = _BF -> -> 0 `i `b ]
 "87
-[; ;main_S1.c: 87:             SSPCONbits.CKP = 1;
-[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
+[; ;main_S1.c: 87:             SSPBUF = PORTB;
+[e = _SSPBUF _PORTB ]
 "88
-[; ;main_S1.c: 88:             _delay((unsigned long)((250)*(8000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+[; ;main_S1.c: 88:             SSPCONbits.CKP = 1;
+[e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
 "89
-[; ;main_S1.c: 89:             while(SSPSTATbits.BF);
+[; ;main_S1.c: 89:             _delay((unsigned long)((250)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"90
+[; ;main_S1.c: 90:             while(SSPSTATbits.BF);
 [e $U 148  ]
 [e :U 149 ]
 [e :U 148 ]
 [e $ != -> . . _SSPSTATbits 0 0 `i -> 0 `i 149  ]
 [e :U 150 ]
-"90
-[; ;main_S1.c: 90:         }
+"91
+[; ;main_S1.c: 91:         }
 }
 [e :U 147 ]
 [e :U 146 ]
-"92
-[; ;main_S1.c: 92:         PIR1bits.SSPIF = 0;
-[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
 "93
-[; ;main_S1.c: 93:     }
+[; ;main_S1.c: 93:         PIR1bits.SSPIF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"94
+[; ;main_S1.c: 94:     }
 }
 [e :U 140 ]
-"94
-[; ;main_S1.c: 94: }
+"95
+[; ;main_S1.c: 95: }
 [e :UE 139 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"96
-[; ;main_S1.c: 96: void main(void) {
+"97
+[; ;main_S1.c: 97: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"98
-[; ;main_S1.c: 98:     setup();
+"99
+[; ;main_S1.c: 99:     setup();
 [e ( _setup ..  ]
-"100
-[; ;main_S1.c: 100:     while(1)
-[e :U 153 ]
 "101
-[; ;main_S1.c: 101:     {
+[; ;main_S1.c: 101:     while(1)
+[e :U 153 ]
+"102
+[; ;main_S1.c: 102:     {
 {
-"103
-[; ;main_S1.c: 103:         distancia = medir_distancia();
-[e = _distancia ( _medir_distancia ..  ]
 "104
-[; ;main_S1.c: 104:         PORTB = distancia;
+[; ;main_S1.c: 104:         distancia = medir_distancia();
+[e = _distancia ( _medir_distancia ..  ]
+"105
+[; ;main_S1.c: 105:         PORTB = distancia;
 [e = _PORTB -> _distancia `uc ]
-"106
-[; ;main_S1.c: 106:     }
+"107
+[; ;main_S1.c: 107:     }
 }
 [e :U 152 ]
 [e $U 153  ]
 [e :U 154 ]
-"107
-[; ;main_S1.c: 107:     return;
-[e $UE 151  ]
 "108
-[; ;main_S1.c: 108: }
+[; ;main_S1.c: 108:     return;
+[e $UE 151  ]
+"109
+[; ;main_S1.c: 109: }
 [e :UE 151 ]
 }
-"114
-[; ;main_S1.c: 114: void setup (void){
+"115
+[; ;main_S1.c: 115: void setup (void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"116
-[; ;main_S1.c: 116:     ANSEL = 0;
-[e = _ANSEL -> -> 0 `i `uc ]
 "117
-[; ;main_S1.c: 117:     ANSELH = 0;
+[; ;main_S1.c: 117:     ANSEL = 0;
+[e = _ANSEL -> -> 0 `i `uc ]
+"118
+[; ;main_S1.c: 118:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"119
-[; ;main_S1.c: 119:     TRISA = 0;
-[e = _TRISA -> -> 0 `i `uc ]
 "120
-[; ;main_S1.c: 120:     TRISB = 0;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;main_S1.c: 120:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
 "121
-[; ;main_S1.c: 121:     TRISD = 0;
+[; ;main_S1.c: 121:     TRISB = 0;
+[e = _TRISB -> -> 0 `i `uc ]
+"122
+[; ;main_S1.c: 122:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"123
-[; ;main_S1.c: 123:     PORTA = 0;
-[e = _PORTA -> -> 0 `i `uc ]
 "124
-[; ;main_S1.c: 124:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;main_S1.c: 124:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
 "125
-[; ;main_S1.c: 125:     PORTD = 0;
+[; ;main_S1.c: 125:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
+"126
+[; ;main_S1.c: 126:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"127
-[; ;main_S1.c: 127:     I2C_Slave_Init(0x10);
+"128
+[; ;main_S1.c: 128:     I2C_Slave_Init(0x10);
 [e ( _I2C_Slave_Init (1 -> -> 16 `i `uc ]
-"134
-[; ;main_S1.c: 134: }
+"135
+[; ;main_S1.c: 135: }
 [e :UE 155 ]
 }

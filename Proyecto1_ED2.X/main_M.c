@@ -60,16 +60,22 @@
 void setup(void);
 
 float distancia;
+uint8_t dis;
+uint8_t color;
+uint8_t linea;
 
 char distanciaLCD[16];
 
 void main(void) {
   
+    __delay_ms(500);
     setup();
     Lcd_Clear_4bits();
     
-//    setupMotores();
-//    setupPWM();
+    setupMotores();
+    setupPWM();
+    CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
+    CCPR2L = 125;
 
     while(1)
     {   
@@ -79,13 +85,101 @@ void main(void) {
         distancia = I2C_Master_Read(0);
         I2C_Master_Stop();
         __delay_ms(200);
-        
+        I2C_Master_Start();
+        I2C_Master_Write(0x31);
+        color = I2C_Master_Read(0);
+        I2C_Master_Stop();
+        __delay_ms(200);
+        I2C_Master_Start();
+        I2C_Master_Write(0x21);
+        linea = I2C_Master_Read(0);
+        I2C_Master_Stop();
+        __delay_ms(200);
         //distancia = medir_distancia();
-        sprintf(distanciaLCD, "Distancia: %d cm", distancia);
+        sprintf(distanciaLCD, "Distancia: %.1f cm", distancia);
 
         Lcd_Set_Cursor_4bits(1,1);
         Lcd_Write_String_4bits(distanciaLCD);
         
+        dis = distancia;
+        linea = 2;
+        
+        if (color == 0){
+            Lcd_Set_Cursor_4bits(2,1);
+            Lcd_Write_String_4bits("NADA");
+
+        } // Botón en PORTB0
+            
+        else if (color == 1){
+
+            CCPR1L = 62;  // 25% de ciclo de trabajo (Velocidad Baja)
+            CCPR2L = 62;
+            Lcd_Set_Cursor_4bits(2,1);
+            Lcd_Write_String_4bits("VERDE");
+        } // Botón en PORTB0
+
+        else if (color == 2){
+
+            CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
+            CCPR2L = 125;
+            Lcd_Set_Cursor_4bits(2,1);
+            Lcd_Write_String_4bits("AZUL");
+
+        } // Botón en PORTB1
+
+        else if (color == 3){
+
+            CCPR1L = 187; // 75% de ciclo de trabajo (Velocidad Alta)
+            CCPR2L = 187;
+            Lcd_Set_Cursor_4bits(2,1);
+            Lcd_Write_String_4bits("ROJO");
+
+        } // Botón en PORTB2
+
+        else if (distancia < 5){
+
+            PORTDbits.RD0 = 0; // Se configuran en alto todos los pines IN para forzarlo a detenerse
+            PORTDbits.RD1 = 0;
+            PORTDbits.RD2 = 0;
+            PORTDbits.RD3 = 0;
+
+        } // Botón en PORTB3
+
+        else if (linea == 0){
+
+            PORTDbits.RD0 = 1; // Se configuran los pines IN para ir hacia adelante
+            PORTDbits.RD1 = 0;
+            PORTDbits.RD2 = 1;
+            PORTDbits.RD3 = 0;
+            Lcd_Set_Cursor_4bits(2,7);
+            Lcd_Write_String_4bits("LIBRE");  
+        } // Botón en PORTB4
+
+        else if (linea == 1){
+
+            PORTDbits.RD0 = 1; // Se configuran los pines IN para ir hacia adelante
+            PORTDbits.RD1 = 0;
+            PORTDbits.RD2 = 0;
+            PORTDbits.RD3 = 0;
+            Lcd_Set_Cursor_4bits(2,7);
+            Lcd_Write_String_4bits("LINEA");
+
+        } // Botón en PORTB4
+        
+        else if (linea == 2){
+
+            PORTDbits.RD0 = 0; // Se configuran los pines IN para ir hacia adelante
+            PORTDbits.RD1 = 0;
+            PORTDbits.RD2 = 1;
+            PORTDbits.RD3 = 0;
+            Lcd_Set_Cursor_4bits(2,7);
+            Lcd_Write_String_4bits("LINEA");
+
+        } // Botón en PORTB4
+        // Esperar un poco antes de leer los botones de nuevo
+        __delay_ms(50);
+
+
         
 //        velocidad_motores();
         

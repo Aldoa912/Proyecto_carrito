@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
   -cn -h+dist/default/production\Proyecto1_ED2_S.X.production.sym \
   --cmf=dist/default/production\Proyecto1_ED2_S.X.production.cmf -z \
-  -Q16F887 -oC:\Users\aldoa\AppData\Local\Temp\xcAsli8.4 \
+  -Q16F887 -oC:\Users\aldoa\AppData\Local\Temp\xcAsstg.4 \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/Proyecto1_ED2_S.X.production.map \
-  --md=C:\Users\aldoa\AppData\Local\Temp\xcAsli8.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\aldoa\AppData\Local\Temp\xcAsstg.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
   -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
@@ -20,7 +20,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\aldoa\AppData\Local\Temp\xcAsli8.o \
+  -pfunctab=ENTRY -k C:\Users\aldoa\AppData\Local\Temp\xcAsstg.o \
   dist/default/production\Proyecto1_ED2_S.X.production.o 
 
 Object code version is 3.11
@@ -30,7 +30,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\aldoa\AppData\Local\Temp\xcAsli8.o
+C:\Users\aldoa\AppData\Local\Temp\xcAsstg.o
                 end_init                              C        C        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        2        0       4
@@ -320,7 +320,7 @@ _main                         maintext     03DB
 _medir_distancia              text3        031A
 _setup                        text1        041E
 _tmr1_init                    text4        0433
-_z                            bssCOMMON    007A
+_z                            bssCOMMON    0079
 btemp                         (abs)        007E
 end_of_initialization         cinit        0011
 interrupt_function            intentry     0004

@@ -10,7 +10,7 @@
 
 void setupMotores(void);
 void setupPWM(void);
-void velocidad_motores(void);
+//void velocidad_motores(void);
 
 #endif	/* MOTORDC_H */
 

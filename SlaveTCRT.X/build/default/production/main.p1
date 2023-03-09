@@ -75,9 +75,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3646 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic16f887.h
 [; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic16f887.h: 3646: extern volatile __bit BF __attribute__((address(0x4A0)));
 [v _BF `Vb ~T0 @X0 0 e@1184 ]
-"229
-[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic16f887.h: 229: extern volatile unsigned char PORTB __attribute__((address(0x006)));
-[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
 [p mainexit ]
 "46 main.c
 [; ;main.c: 46: void setup (void);
@@ -476,8 +473,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 75:             BF = 0;
 [e = _BF -> -> 0 `i `b ]
 "76
-[; ;main.c: 76:             SSPBUF = PORTB;
-[e = _SSPBUF _PORTB ]
+[; ;main.c: 76:             SSPBUF = enviar;
+[e = _SSPBUF _enviar ]
 "77
 [; ;main.c: 77:             SSPCONbits.CKP = 1;
 [e = . . _SSPCONbits 0 1 -> -> 1 `i `uc ]
@@ -624,56 +621,53 @@ Version 4.0 HI-TECH Software Intermediate Code
 "124
 [; ;main.c: 124:     _delay((unsigned long)((10)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"126
-[; ;main.c: 126:     PORTB = enviar;
-[e = _PORTB _enviar ]
-"128
-[; ;main.c: 128:     }
+"127
+[; ;main.c: 127:     }
 }
 [e :U 152 ]
 [e $U 153  ]
 [e :U 154 ]
-"129
-[; ;main.c: 129:     return;
+"128
+[; ;main.c: 128:     return;
 [e $UE 151  ]
-"130
-[; ;main.c: 130: }
+"129
+[; ;main.c: 129: }
 [e :UE 151 ]
 }
-"133
-[; ;main.c: 133: void setup(void){
+"132
+[; ;main.c: 132: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"134
-[; ;main.c: 134:     ANSEL = 0;
+"133
+[; ;main.c: 133:     ANSEL = 0;
 [e = _ANSEL -> -> 0 `i `uc ]
-"135
-[; ;main.c: 135:     ANSELH = 0;
+"134
+[; ;main.c: 134:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"136
-[; ;main.c: 136:     TRISA = 0b00000011;
+"135
+[; ;main.c: 135:     TRISA = 0b00000011;
 [e = _TRISA -> -> 3 `i `uc ]
-"137
-[; ;main.c: 137:     TRISD = 0;
+"136
+[; ;main.c: 136:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"138
-[; ;main.c: 138:     PORTD = 0;
+"137
+[; ;main.c: 137:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"139
-[; ;main.c: 139:     PORTA = 0;
+"138
+[; ;main.c: 138:     PORTA = 0;
 [e = _PORTA -> -> 0 `i `uc ]
-"140
-[; ;main.c: 140:     OSCCONbits.IRCF = 0b111;
+"139
+[; ;main.c: 139:     OSCCONbits.IRCF = 0b111;
 [e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
-"141
-[; ;main.c: 141:     OSCCONbits.SCS = 1;
+"140
+[; ;main.c: 140:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"142
-[; ;main.c: 142:     I2C_Slave_Init(0x20);
+"141
+[; ;main.c: 141:     I2C_Slave_Init(0x20);
 [e ( _I2C_Slave_Init (1 -> -> 32 `i `uc ]
-"148
-[; ;main.c: 148: }
+"147
+[; ;main.c: 147: }
 [e :UE 168 ]
 }

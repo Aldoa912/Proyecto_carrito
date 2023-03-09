@@ -83,48 +83,48 @@ void setupPWM(void){
     
 }
             
-void velocidad_motores(){
-            
-    if (!PORTBbits.RB0){
-        
-        CCPR1L = 62;  // 25% de ciclo de trabajo (Velocidad Baja)
-        CCPR2L = 62;
-        
-    } // Botón en PORTB0
-            
-    if (!PORTBbits.RB1){
-        
-        CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
-        CCPR2L = 125;
-        
-    } // Botón en PORTB1
-    
-    if (!PORTBbits.RB2){
-        
-        CCPR1L = 187; // 75% de ciclo de trabajo (Velocidad Alta)
-        CCPR2L = 187;
-        
-    } // Botón en PORTB2
-            
-    if (!PORTBbits.RB3){
-        
-        PORTDbits.RD0 = 0; // Se configuran en alto todos los pines IN para forzarlo a detenerse
-        PORTDbits.RD1 = 0;
-        PORTDbits.RD2 = 0;
-        PORTDbits.RD3 = 0;
-        
-    } // Botón en PORTB3
-    
-    if (!PORTBbits.RB4){
-        
-        PORTDbits.RD0 = 1; // Se configuran los pines IN para ir hacia adelante
-        PORTDbits.RD1 = 0;
-        PORTDbits.RD2 = 1;
-        PORTDbits.RD3 = 0;
-        
-    } // Botón en PORTB4
-
-    // Esperar un poco antes de leer los botones de nuevo
-    __delay_ms(50);
-    
-}
+//void velocidad_motores(){
+//            
+//    if (!PORTBbits.RB0){
+//        
+//        CCPR1L = 62;  // 25% de ciclo de trabajo (Velocidad Baja)
+//        CCPR2L = 62;
+//        
+//    } // Botón en PORTB0
+//            
+//    if (!PORTBbits.RB1){
+//        
+//        CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
+//        CCPR2L = 125;
+//        
+//    } // Botón en PORTB1
+//    
+//    if (!PORTBbits.RB2){
+//        
+//        CCPR1L = 187; // 75% de ciclo de trabajo (Velocidad Alta)
+//        CCPR2L = 187;
+//        
+//    } // Botón en PORTB2
+//            
+//    if (!PORTBbits.RB3){
+//        
+//        PORTDbits.RD0 = 0; // Se configuran en alto todos los pines IN para forzarlo a detenerse
+//        PORTDbits.RD1 = 0;
+//        PORTDbits.RD2 = 0;
+//        PORTDbits.RD3 = 0;
+//        
+//    } // Botón en PORTB3
+//    
+//    if (!PORTBbits.RB4){
+//        
+//        PORTDbits.RD0 = 1; // Se configuran los pines IN para ir hacia adelante
+//        PORTDbits.RD1 = 0;
+//        PORTDbits.RD2 = 1;
+//        PORTDbits.RD3 = 0;
+//        
+//    } // Botón en PORTB4
+//
+//    // Esperar un poco antes de leer los botones de nuevo
+//    __delay_ms(50);
+//    
+//}

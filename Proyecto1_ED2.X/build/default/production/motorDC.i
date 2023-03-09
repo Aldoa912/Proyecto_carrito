@@ -2637,7 +2637,6 @@ extern __bank0 __bit __timeout;
 # 11 "./motorDC.h"
 void setupMotores(void);
 void setupPWM(void);
-void velocidad_motores(void);
 # 9 "motorDC.c" 2
 
 
@@ -2713,51 +2712,5 @@ void setupPWM(void){
 
     TRISCbits.TRISC2 = 0;
     TRISCbits.TRISC1 = 0;
-
-}
-
-void velocidad_motores(){
-
-    if (!PORTBbits.RB0){
-
-        CCPR1L = 62;
-        CCPR2L = 62;
-
-    }
-
-    if (!PORTBbits.RB1){
-
-        CCPR1L = 125;
-        CCPR2L = 125;
-
-    }
-
-    if (!PORTBbits.RB2){
-
-        CCPR1L = 187;
-        CCPR2L = 187;
-
-    }
-
-    if (!PORTBbits.RB3){
-
-        PORTDbits.RD0 = 0;
-        PORTDbits.RD1 = 0;
-        PORTDbits.RD2 = 0;
-        PORTDbits.RD3 = 0;
-
-    }
-
-    if (!PORTBbits.RB4){
-
-        PORTDbits.RD0 = 1;
-        PORTDbits.RD1 = 0;
-        PORTDbits.RD2 = 1;
-        PORTDbits.RD3 = 0;
-
-    }
-
-
-    _delay((unsigned long)((50)*(8000000/4000.0)));
 
 }

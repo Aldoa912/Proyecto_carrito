@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Wed Mar 08 22:53:36 2023
+                                                                                               Thu Mar 09 03:55:34 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
      1                           	processor	16F887
@@ -513,9 +513,9 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    499                           
    500                           	psect	bssCOMMON
    501     0079                     __pbssCOMMON:
-   502     0079                     _dato:
+   502     0079                     _z:
    503     0079                     	ds	1
-   504     007A                     _z:
+   504     007A                     _dato:
    505     007A                     	ds	1
    506                           
    507                           	psect	cstackCOMMON
@@ -660,7 +660,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    646 ;;
    647 ;; *************** function _main *****************
    648 ;; Defined at:
-   649 ;;		line 96 in file "main_S1.c"
+   649 ;;		line 97 in file "main_S1.c"
    650 ;; Parameters:    Size  Location     Type
    651 ;;		None
    652 ;; Auto vars:     Size  Location     Type
@@ -697,11 +697,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    683                           ; Regs used in _main: [wreg+status,2+status,0+btemp+1+pclath+cstack]
    684                           
    685                           
-   686                           ;main_S1.c: 98:     setup();
+   686                           ;main_S1.c: 99:     setup();
    687     03DB  120A  118A  241E  120A  118A  	fcall	_setup
    688     03E0                     l1481:
    689                           
-   690                           ;main_S1.c: 101:     {;main_S1.c: 103:         distancia = medir_distancia();
+   690                           ;main_S1.c: 102:     {;main_S1.c: 104:         distancia = medir_distancia();
    691     03E0  120A  118A  231A  120A  118A  	fcall	_medir_distancia
    692     03E5  1283               	bcf	3,5	;RP0=0, select bank0
    693     03E6  1303               	bcf	3,6	;RP1=0, select bank0
@@ -715,7 +715,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    701     03EE  00CE               	movwf	_distancia
    702     03EF                     l1483:
    703                           
-   704                           ;main_S1.c: 104:         PORTB = distancia;
+   704                           ;main_S1.c: 105:         PORTB = distancia;
    705     03EF  0851               	movf	_distancia+3,w
    706     03F0  00F6               	movwf	___fltol@f1+3
    707     03F1  0850               	movf	_distancia+2,w
@@ -737,7 +737,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    723     041E                     __ptext1:	
    724 ;; *************** function _setup *****************
    725 ;; Defined at:
-   726 ;;		line 114 in file "main_S1.c"
+   726 ;;		line 115 in file "main_S1.c"
    727 ;; Parameters:    Size  Location     Type
    728 ;;		None
    729 ;; Auto vars:     Size  Location     Type
@@ -773,38 +773,38 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    759                           ; Regs used in _setup: [wreg+status,2+status,0+pclath+cstack]
    760                           
    761                           
-   762                           ;main_S1.c: 116:     ANSEL = 0;
+   762                           ;main_S1.c: 117:     ANSEL = 0;
    763     041E  1683               	bsf	3,5	;RP0=1, select bank3
    764     041F  1703               	bsf	3,6	;RP1=1, select bank3
    765     0420  0188               	clrf	8	;volatile
    766                           
-   767                           ;main_S1.c: 117:     ANSELH = 0;
+   767                           ;main_S1.c: 118:     ANSELH = 0;
    768     0421  0189               	clrf	9	;volatile
    769                           
-   770                           ;main_S1.c: 119:     TRISA = 0;
+   770                           ;main_S1.c: 120:     TRISA = 0;
    771     0422  1683               	bsf	3,5	;RP0=1, select bank1
    772     0423  1303               	bcf	3,6	;RP1=0, select bank1
    773     0424  0185               	clrf	5	;volatile
    774                           
-   775                           ;main_S1.c: 120:     TRISB = 0;
+   775                           ;main_S1.c: 121:     TRISB = 0;
    776     0425  0186               	clrf	6	;volatile
    777                           
-   778                           ;main_S1.c: 121:     TRISD = 0;
+   778                           ;main_S1.c: 122:     TRISD = 0;
    779     0426  0188               	clrf	8	;volatile
    780                           
-   781                           ;main_S1.c: 123:     PORTA = 0;
+   781                           ;main_S1.c: 124:     PORTA = 0;
    782     0427  1283               	bcf	3,5	;RP0=0, select bank0
    783     0428  1303               	bcf	3,6	;RP1=0, select bank0
    784     0429  0185               	clrf	5	;volatile
    785                           
-   786                           ;main_S1.c: 124:     PORTB = 0;
+   786                           ;main_S1.c: 125:     PORTB = 0;
    787     042A  0186               	clrf	6	;volatile
    788                           
-   789                           ;main_S1.c: 125:     PORTD = 0;
+   789                           ;main_S1.c: 126:     PORTD = 0;
    790     042B  0188               	clrf	8	;volatile
    791     042C                     l1333:
    792                           
-   793                           ;main_S1.c: 127:     I2C_Slave_Init(0x10);
+   793                           ;main_S1.c: 128:     I2C_Slave_Init(0x10);
    794     042C  3010               	movlw	16
    795     042D  120A  118A  2404  120A  118A  	fcall	_I2C_Slave_Init
    796     0432                     l151:
@@ -2265,7 +2265,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2250     037E                     __ptext8:	
   2251 ;; *************** function _isr *****************
   2252 ;; Defined at:
-  2253 ;;		line 61 in file "main_S1.c"
+  2253 ;;		line 62 in file "main_S1.c"
   2254 ;; Parameters:    Size  Location     Type
   2255 ;;		None
   2256 ;; Auto vars:     Size  Location     Type
@@ -2297,7 +2297,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2282                           
   2283     037E                     i1l1061:
   2284                           
-  2285                           ;main_S1.c: 62:    if(PIR1bits.SSPIF == 1){
+  2285                           ;main_S1.c: 63:    if(PIR1bits.SSPIF == 1){
   2286     037E  1283               	bcf	3,5	;RP0=0, select bank0
   2287     037F  1303               	bcf	3,6	;RP1=0, select bank0
   2288     0380  1D8C               	btfss	12,3	;volatile
@@ -2308,10 +2308,10 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2293     0384                     u60_20:
   2294     0384                     i1l1063:
   2295                           
-  2296                           ;main_S1.c: 64:         SSPCONbits.CKP = 0;
+  2296                           ;main_S1.c: 65:         SSPCONbits.CKP = 0;
   2297     0384  1214               	bcf	20,4	;volatile
   2298                           
-  2299                           ;main_S1.c: 66:         if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
+  2299                           ;main_S1.c: 67:         if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
   2300     0385  1B14               	btfsc	20,6	;volatile
   2301     0386  2B88               	goto	u61_21
   2302     0387  2B89               	goto	u61_20
@@ -2327,24 +2327,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2312     038D                     u62_20:
   2313     038D                     i1l1067:
   2314                           
-  2315                           ;main_S1.c: 67:             z = SSPBUF;
+  2315                           ;main_S1.c: 68:             z = SSPBUF;
   2316     038D  0813               	movf	19,w	;volatile
-  2317     038E  00FA               	movwf	_z
+  2317     038E  00F9               	movwf	_z
   2318     038F                     i1l1069:
   2319                           
-  2320                           ;main_S1.c: 68:             SSPCONbits.SSPOV = 0;
+  2320                           ;main_S1.c: 69:             SSPCONbits.SSPOV = 0;
   2321     038F  1314               	bcf	20,6	;volatile
   2322     0390                     i1l1071:
   2323                           
-  2324                           ;main_S1.c: 69:             SSPCONbits.WCOL = 0;
+  2324                           ;main_S1.c: 70:             SSPCONbits.WCOL = 0;
   2325     0390  1394               	bcf	20,7	;volatile
   2326     0391                     i1l1073:
   2327                           
-  2328                           ;main_S1.c: 70:             SSPCONbits.CKP = 1;
+  2328                           ;main_S1.c: 71:             SSPCONbits.CKP = 1;
   2329     0391  1614               	bsf	20,4	;volatile
   2330     0392                     i1l1075:
   2331                           
-  2332                           ;main_S1.c: 73:         if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
+  2332                           ;main_S1.c: 74:         if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
   2333     0392  1683               	bsf	3,5	;RP0=1, select bank1
   2334     0393  1303               	bcf	3,6	;RP1=0, select bank1
   2335     0394  1A94               	btfsc	20,5	;volatile
@@ -2362,21 +2362,21 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2347     039C                     u64_20:
   2348     039C                     i1l1079:
   2349                           
-  2350                           ;main_S1.c: 75:             z = SSPBUF;
+  2350                           ;main_S1.c: 76:             z = SSPBUF;
   2351     039C  1283               	bcf	3,5	;RP0=0, select bank0
   2352     039D  1303               	bcf	3,6	;RP1=0, select bank0
   2353     039E  0813               	movf	19,w	;volatile
-  2354     039F  00FA               	movwf	_z
+  2354     039F  00F9               	movwf	_z
   2355     03A0                     i1l1081:
   2356                           
-  2357                           ;main_S1.c: 77:             PIR1bits.SSPIF = 0;
+  2357                           ;main_S1.c: 78:             PIR1bits.SSPIF = 0;
   2358     03A0  118C               	bcf	12,3	;volatile
   2359     03A1                     i1l1083:
   2360                           
-  2361                           ;main_S1.c: 78:             SSPCONbits.CKP = 1;
+  2361                           ;main_S1.c: 79:             SSPCONbits.CKP = 1;
   2362     03A1  1614               	bsf	20,4	;volatile
   2363     03A2                     i1l132:	
-  2364                           ;main_S1.c: 79:             while(!SSPSTATbits.BF);
+  2364                           ;main_S1.c: 80:             while(!SSPSTATbits.BF);
   2365                           
   2366     03A2  1683               	bsf	3,5	;RP0=1, select bank1
   2367     03A3  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2388,13 +2388,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2373     03A8                     u65_20:
   2374     03A8                     i1l1085:
   2375                           
-  2376                           ;main_S1.c: 80:             PORTD = SSPBUF;
+  2376                           ;main_S1.c: 81:             PORTD = SSPBUF;
   2377     03A8  1283               	bcf	3,5	;RP0=0, select bank0
   2378     03A9  1303               	bcf	3,6	;RP1=0, select bank0
   2379     03AA  0813               	movf	19,w	;volatile
   2380     03AB  0088               	movwf	8	;volatile
   2381                           
-  2382                           ;main_S1.c: 81:             _delay((unsigned long)((250)*(8000000/4000000.0)));
+  2382                           ;main_S1.c: 82:             _delay((unsigned long)((250)*(8000000/4000000.0)));
   2383     03AC  30A6               	movlw	166
   2384     03AD  00F0               	movwf	??_isr
   2385     03AE                     u151_27:
@@ -2402,7 +2402,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2387     03AF  2BAE               	goto	u151_27
   2388     03B0  0000               	nop
   2389                           
-  2390                           ;main_S1.c: 83:         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
+  2390                           ;main_S1.c: 84:         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
   2391     03B1  2BD1               	goto	i1l135
   2392     03B2                     i1l131:
   2393     03B2  1A94               	btfsc	20,5	;volatile
@@ -2420,29 +2420,29 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2405     03BA                     u67_20:
   2406     03BA                     i1l1089:
   2407                           
-  2408                           ;main_S1.c: 84:             z = SSPBUF;
+  2408                           ;main_S1.c: 85:             z = SSPBUF;
   2409     03BA  1283               	bcf	3,5	;RP0=0, select bank0
   2410     03BB  1303               	bcf	3,6	;RP1=0, select bank0
   2411     03BC  0813               	movf	19,w	;volatile
-  2412     03BD  00FA               	movwf	_z
+  2412     03BD  00F9               	movwf	_z
   2413     03BE                     i1l1091:
   2414                           
-  2415                           ;main_S1.c: 85:             BF = 0;
+  2415                           ;main_S1.c: 86:             BF = 0;
   2416     03BE  1683               	bsf	3,5	;RP0=1, select bank1
   2417     03BF  1303               	bcf	3,6	;RP1=0, select bank1
   2418     03C0  1014               	bcf	20,0	;volatile
   2419                           
-  2420                           ;main_S1.c: 86:             SSPBUF = PORTB;
+  2420                           ;main_S1.c: 87:             SSPBUF = PORTB;
   2421     03C1  1283               	bcf	3,5	;RP0=0, select bank0
   2422     03C2  1303               	bcf	3,6	;RP1=0, select bank0
   2423     03C3  0806               	movf	6,w	;volatile
   2424     03C4  0093               	movwf	19	;volatile
   2425     03C5                     i1l1093:
   2426                           
-  2427                           ;main_S1.c: 87:             SSPCONbits.CKP = 1;
+  2427                           ;main_S1.c: 88:             SSPCONbits.CKP = 1;
   2428     03C5  1614               	bsf	20,4	;volatile
   2429                           
-  2430                           ;main_S1.c: 88:             _delay((unsigned long)((250)*(8000000/4000000.0)));
+  2430                           ;main_S1.c: 89:             _delay((unsigned long)((250)*(8000000/4000000.0)));
   2431     03C6  30A6               	movlw	166
   2432     03C7  00F0               	movwf	??_isr
   2433     03C8                     u152_27:
@@ -2450,7 +2450,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2435     03C9  2BC8               	goto	u152_27
   2436     03CA  0000               	nop
   2437     03CB                     i1l137:	
-  2438                           ;main_S1.c: 89:             while(SSPSTATbits.BF);
+  2438                           ;main_S1.c: 90:             while(SSPSTATbits.BF);
   2439                           
   2440     03CB  1683               	bsf	3,5	;RP0=1, select bank1
   2441     03CC  1303               	bcf	3,6	;RP1=0, select bank1
@@ -2462,7 +2462,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2447     03D1                     u68_20:
   2448     03D1                     i1l135:
   2449                           
-  2450                           ;main_S1.c: 92:         PIR1bits.SSPIF = 0;
+  2450                           ;main_S1.c: 93:         PIR1bits.SSPIF = 0;
   2451     03D1  1283               	bcf	3,5	;RP0=0, select bank0
   2452     03D2  1303               	bcf	3,6	;RP1=0, select bank0
   2453     03D3  118C               	bcf	12,3	;volatile
@@ -2706,9 +2706,9 @@ DATA                 0      0      3D      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Wed Mar 08 22:53:36 2023
+Symbol Table                                                                                   Thu Mar 09 03:55:34 2023
 
-                ___fldiv@aexp 0043                  ___fldiv@bexp 0042                             _z 007A  
+                ___fldiv@aexp 0043                  ___fldiv@bexp 0042                             _z 0079  
                 ___fldiv@sign 003B                   _SSPSTATbits 0094                            _BF 04A0  
                           l55 041D                            l73 043A                            l81 0339  
                           l82 037D                            l76 032E                            l79 0335  
@@ -2795,7 +2795,7 @@ Symbol Table                                                                    
                         u1295 0247                          u1391 0338                          u1480 0309  
                         u1481 0308                          u1490 030E                          u1491 030D  
                         u1475 02FB                          _PEIE 005E                          _TMR1 000E  
-                        _dato 0079                          _main 03DB                          btemp 007E  
+                        _dato 007A                          _main 03DB                          btemp 007E  
                         start 000C               ___fldiv@new_exp 003C                         ??_isr 0070  
                ___fltol@sign1 0077                         ?_main 0070               __end_of___fldiv 01E8  
              __end_of___fltol 031A                         _ANSEL 0188                         i1l131 03B2  

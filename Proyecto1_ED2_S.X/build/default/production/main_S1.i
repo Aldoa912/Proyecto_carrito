@@ -2840,8 +2840,9 @@ float medir_distancia(void);
 
 float distancia;
 
-uint8_t z;
+
 uint8_t dato;
+uint8_t z;
 
 void setup(void);
 

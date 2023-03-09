@@ -2830,7 +2830,7 @@ void __attribute__((picinterrupt(("")))) isr(void){
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
             z = SSPBUF;
             BF = 0;
-            SSPBUF = PORTB;
+            SSPBUF = enviar;
             SSPCONbits.CKP = 1;
             _delay((unsigned long)((250)*(8000000/4000000.0)));
             while(SSPSTATbits.BF);
@@ -2880,7 +2880,6 @@ void main(void) {
 
     _delay((unsigned long)((10)*(8000000/4000.0)));
 
-    PORTB = enviar;
 
     }
     return;

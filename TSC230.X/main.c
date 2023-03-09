@@ -81,7 +81,7 @@ void __interrupt() isr(void){
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
             z = SSPBUF;
             BF = 0;
-            SSPBUF = PORTB;
+            SSPBUF = estado;
             SSPCONbits.CKP = 1;
             __delay_us(250);
             while(SSPSTATbits.BF);
@@ -104,22 +104,21 @@ void main(void) {
     green_freq = read_green();
     blue_freq = read_blue();
     
-    if (red_freq < 130 && red_freq > 122 && green_freq < 150 && green_freq > 140 && blue_freq < 80 && blue_freq > 65){
+    if (red_freq < 185 && red_freq > 170 && green_freq < 220 && green_freq > 210 && blue_freq < 70 && blue_freq > 60){
         estado = 1;
     }
     
-    if (red_freq < 180 && red_freq > 170 && green_freq < 185 && green_freq > 170 && blue_freq < 75 && blue_freq > 65){
+    else if (red_freq < 195 && red_freq > 180 && green_freq < 235 && green_freq > 220 && blue_freq < 68 && blue_freq > 50){
         estado = 2;
     }
 //    
-    if (red_freq < 100 && red_freq > 70 && green_freq < 210 && green_freq > 160 && blue_freq < 70 && blue_freq > 50){
+    else if (red_freq < 130 && red_freq > 115 && green_freq < 260 && green_freq > 240 && blue_freq < 68 && blue_freq > 50){
         estado = 3;
     }
     
     else {
         estado = 0;
     }
-    
     
     
     __delay_ms(100);
