@@ -1,0 +1,326 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"11 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\configINTOSC.c
+[e E1292 . `uc
+FOSC_8MHZ 7
+FOSC_4MHZ 6
+FOSC_2MHZ 5
+FOSC_1MH 4
+FOSC_500KHZ 3
+FOSC_250KHZ 2
+FOSC_125KHZ 1
+]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"29 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\configI2C.c
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"90
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+"16 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\configSensorUltrasonico.c
+[v _tmr1_init tmr1_init `(v  1 e 1 0 ]
+"28
+[v _medir_distancia medir_distancia `(f  1 e 4 0 ]
+"61 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\main_S1.c
+[v _isr isr `II(v  1 e 1 0 ]
+"96
+[v _main main `(v  1 e 1 0 ]
+"114
+[v _setup setup `(v  1 e 1 0 ]
+"167 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S210 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"184
+[u S219 . 1 `S210 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES219  1 e 1 @5 ]
+"229
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S266 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"554
+[u S274 . 1 `S266 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES274  1 e 1 @12 ]
+"651
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+[s S146 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1GE 1 0 :1:6 
+`uc 1 T1GINV 1 0 :1:7 
+]
+"701
+[s S154 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T1GIV 1 0 :1:7 
+]
+[s S162 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+]
+[u S165 . 1 `S146 1 . 1 0 `S154 1 . 1 0 `S162 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES165  1 e 1 @16 ]
+"844
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"851
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S285 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"871
+[s S291 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S296 . 1 `S285 1 . 1 0 `S291 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES296  1 e 1 @20 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+[s S189 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1434
+[u S198 . 1 `S189 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES198  1 e 1 @133 ]
+"1479
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S26 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1558
+[u S35 . 1 `S26 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES35  1 e 1 @135 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S113 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1883
+[s S119 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S124 . 1 `S113 1 . 1 0 `S119 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES124  1 e 1 @143 ]
+"1980
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S47 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1997
+[u S56 . 1 `S47 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES56  1 e 1 @145 ]
+"2049
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"2178
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S312 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2232
+[s S321 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S326 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S332 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S337 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S342 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S347 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S352 . 1 `S312 1 . 1 0 `S321 1 . 1 0 `S326 1 . 1 0 `S332 1 . 1 0 `S337 1 . 1 0 `S342 1 . 1 0 `S347 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES352  1 e 1 @148 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3646
+[v _BF BF `VEb  1 e 0 @1184 ]
+"3901
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"4045
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"4279
+[v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
+"4282
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"4462
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"4465
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"51 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\main_S1.c
+[v _distancia distancia `f  1 e 4 0 ]
+"53
+[v _z z `uc  1 e 1 0 ]
+"96
+[v _main main `(v  1 e 1 0 ]
+{
+"108
+} 0
+"114
+[v _setup setup `(v  1 e 1 0 ]
+{
+"134
+} 0
+"90 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\configI2C.c
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+{
+[v I2C_Slave_Init@address address `uc  1 a 1 wreg ]
+[v I2C_Slave_Init@address address `uc  1 a 1 wreg ]
+"92
+[v I2C_Slave_Init@address address `uc  1 a 1 3 ]
+"102
+} 0
+"28 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\configSensorUltrasonico.c
+[v _medir_distancia medir_distancia `(f  1 e 4 0 ]
+{
+"59
+[v medir_distancia@distancia distancia `f  1 a 4 40 ]
+"56
+[v medir_distancia@echo_duration echo_duration `ui  1 a 2 44 ]
+"62
+} 0
+"16
+[v _tmr1_init tmr1_init `(v  1 e 1 0 ]
+{
+"21
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 6 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 5 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 3 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 4 ]
+"44
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 30 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 23 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 28 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 35 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 34 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 27 ]
+"8
+[v ___fldiv@a a `d  1 p 4 10 ]
+[v ___fldiv@b b `d  1 p 4 14 ]
+"185
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 8 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 7 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 3 ]
+"70
+} 0
+"61 C:\Users\byron\OneDrive\Documents\GitHub\Carrito\Proyecto1_ED2_S.X\main_S1.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"94
+} 0
