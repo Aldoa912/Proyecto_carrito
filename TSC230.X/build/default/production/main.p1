@@ -397,9 +397,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "66
 [; ;main.c: 66:     blue_freq = read_blue();
 [e = _blue_freq ( _read_blue ..  ]
+"68
+[; ;main.c: 68:     if (red_freq < 130 && red_freq > 122 && green_freq < 150 && green_freq > 140 && blue_freq < 80 && blue_freq > 65){
+[e $ ! && && && && && < _red_freq -> -> -> 130 `i `l `ul > _red_freq -> -> -> 122 `i `l `ul < _green_freq -> -> -> 150 `i `l `ul > _green_freq -> -> -> 140 `i `l `ul < _blue_freq -> -> -> 80 `i `l `ul > _blue_freq -> -> -> 65 `i `l `ul 143  ]
+{
+"69
+[; ;main.c: 69:         estado = 1;
+[e = _estado -> 1 `i ]
+"70
+[; ;main.c: 70:         Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"71
+[; ;main.c: 71:         Lcd_Write_String("VERDE");
+[e ( _Lcd_Write_String (1 :s 2C ]
+"72
+[; ;main.c: 72:     }
+}
+[e :U 143 ]
+"74
+[; ;main.c: 74:     if (red_freq < 180 && red_freq > 170 && green_freq < 185 && green_freq > 170 && blue_freq < 75 && blue_freq > 65){
+[e $ ! && && && && && < _red_freq -> -> -> 180 `i `l `ul > _red_freq -> -> -> 170 `i `l `ul < _green_freq -> -> -> 185 `i `l `ul > _green_freq -> -> -> 170 `i `l `ul < _blue_freq -> -> -> 75 `i `l `ul > _blue_freq -> -> -> 65 `i `l `ul 144  ]
+{
+"75
+[; ;main.c: 75:         estado = 2;
+[e = _estado -> 2 `i ]
+"76
+[; ;main.c: 76:         Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"77
+[; ;main.c: 77:         Lcd_Write_String("AZUL");
+[e ( _Lcd_Write_String (1 :s 3C ]
+"78
+[; ;main.c: 78:     }
+}
+[e :U 144 ]
 "80
 [; ;main.c: 80:     if (red_freq < 100 && red_freq > 70 && green_freq < 210 && green_freq > 160 && blue_freq < 70 && blue_freq > 50){
-[e $ ! && && && && && < _red_freq -> -> -> 100 `i `l `ul > _red_freq -> -> -> 70 `i `l `ul < _green_freq -> -> -> 210 `i `l `ul > _green_freq -> -> -> 160 `i `l `ul < _blue_freq -> -> -> 70 `i `l `ul > _blue_freq -> -> -> 50 `i `l `ul 143  ]
+[e $ ! && && && && && < _red_freq -> -> -> 100 `i `l `ul > _red_freq -> -> -> 70 `i `l `ul < _green_freq -> -> -> 210 `i `l `ul > _green_freq -> -> -> 160 `i `l `ul < _blue_freq -> -> -> 70 `i `l `ul > _blue_freq -> -> -> 50 `i `l `ul 145  ]
 {
 "81
 [; ;main.c: 81:         estado = 3;
@@ -409,14 +443,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "83
 [; ;main.c: 83:         Lcd_Write_String("ROJO");
-[e ( _Lcd_Write_String (1 :s 2C ]
+[e ( _Lcd_Write_String (1 :s 4C ]
 "84
 [; ;main.c: 84:     }
 }
-[e $U 144  ]
+[e $U 146  ]
 "86
 [; ;main.c: 86:     else {
-[e :U 143 ]
+[e :U 145 ]
 {
 "87
 [; ;main.c: 87:         estado = 0;
@@ -426,20 +460,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "89
 [; ;main.c: 89:         Lcd_Write_String("NADA");
-[e ( _Lcd_Write_String (1 :s 3C ]
+[e ( _Lcd_Write_String (1 :s 5C ]
 "90
 [; ;main.c: 90:     }
 }
-[e :U 144 ]
+[e :U 146 ]
 "93
 [; ;main.c: 93:     sprintf(rojo, "%lu", red_freq);
-[e ( _sprintf (1 , (. , &U _rojo :s 4C _red_freq ]
+[e ( _sprintf (1 , (. , &U _rojo :s 6C _red_freq ]
 "94
 [; ;main.c: 94:     sprintf(azul, "%lu", blue_freq);
-[e ( _sprintf (1 , (. , &U _azul :s 5C _blue_freq ]
+[e ( _sprintf (1 , (. , &U _azul :s 7C _blue_freq ]
 "95
 [; ;main.c: 95:     sprintf(verde, "%lu", green_freq);
-[e ( _sprintf (1 , (. , &U _verde :s 6C _green_freq ]
+[e ( _sprintf (1 , (. , &U _verde :s 8C _green_freq ]
 "99
 [; ;main.c: 99:     Lcd_Set_Cursor(2,6);
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 6 `i `uc ]
@@ -503,12 +537,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
 "125
 [; ;main.c: 125: }
-[e :UE 145 ]
+[e :UE 147 ]
 }
 [p f _sprintf 8389648 ]
-[a 4C 37 108 117 0 ]
-[a 5C 37 108 117 0 ]
 [a 6C 37 108 117 0 ]
-[a 2C 82 79 74 79 0 ]
-[a 3C 78 65 68 65 0 ]
+[a 7C 37 108 117 0 ]
+[a 8C 37 108 117 0 ]
+[a 4C 82 79 74 79 0 ]
+[a 3C 65 90 85 76 0 ]
+[a 2C 86 69 82 68 69 0 ]
+[a 5C 78 65 68 65 0 ]
 [a 1C 67 79 76 79 82 58 0 ]

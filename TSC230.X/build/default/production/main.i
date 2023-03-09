@@ -2806,7 +2806,19 @@ void main(void) {
     red_freq = read_red();
     green_freq = read_green();
     blue_freq = read_blue();
-# 80 "main.c"
+
+    if (red_freq < 130 && red_freq > 122 && green_freq < 150 && green_freq > 140 && blue_freq < 80 && blue_freq > 65){
+        estado = 1;
+        Lcd_Set_Cursor(2,1);
+        Lcd_Write_String("VERDE");
+    }
+
+    if (red_freq < 180 && red_freq > 170 && green_freq < 185 && green_freq > 170 && blue_freq < 75 && blue_freq > 65){
+        estado = 2;
+        Lcd_Set_Cursor(2,1);
+        Lcd_Write_String("AZUL");
+    }
+
     if (red_freq < 100 && red_freq > 70 && green_freq < 210 && green_freq > 160 && blue_freq < 70 && blue_freq > 50){
         estado = 3;
         Lcd_Set_Cursor(2,1);

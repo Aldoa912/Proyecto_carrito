@@ -366,7 +366,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_M.c: 81:         _delay((unsigned long)((200)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "84
-[; ;main_M.c: 84:         sprintf(distanciaLCD, "Distancia: %.1fcm", distancia);
+[; ;main_M.c: 84:         sprintf(distanciaLCD, "Distancia: %d cm", distancia);
 [e ( _sprintf (1 , (. , &U _distanciaLCD :s 1C -> _distancia `d ]
 "86
 [; ;main_M.c: 86:         Lcd_Set_Cursor_4bits(1,1);
@@ -430,5 +430,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_M.c: 127: }
 [e :UE 143 ]
 }
-[p f _sprintf 8462336 ]
-[a 1C 68 105 115 116 97 110 99 105 97 58 32 37 46 49 102 99 109 0 ]
+[p f _sprintf 8388736 ]
+[a 1C 68 105 115 116 97 110 99 105 97 58 32 37 100 32 99 109 0 ]

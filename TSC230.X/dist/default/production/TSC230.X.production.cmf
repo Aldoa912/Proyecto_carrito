@@ -14,33 +14,33 @@
 $dist/default/production\TSC230.X.production.o
 cinit CODE 0 7F3 7F3 D 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 217 217 129 2 1
-text2 CODE 0 E87 E87 56 2 1
-text3 CODE 0 81 81 66 2 1
-text4 CODE 0 D6F D6F 12 2 1
-text5 CODE 0 1E 1E 63 2 1
-text6 CODE 0 F9D F9D 63 2 1
-text7 CODE 0 F3A F3A 63 2 1
-text8 CODE 0 15F 15F B8 2 1
-text9 CODE 0 E7 E7 78 2 1
+text1 CODE 0 105 105 129 2 1
+text2 CODE 0 D46 D46 56 2 1
+text3 CODE 0 F22 F22 66 2 1
+text4 CODE 0 C5A C5A 12 2 1
+text5 CODE 0 EBF EBF 63 2 1
+text6 CODE 0 E5C E5C 63 2 1
+text7 CODE 0 DF9 DF9 63 2 1
+text8 CODE 0 4D 4D B8 2 1
+text9 CODE 0 F88 F88 78 2 1
 text10 CODE 0 4AE 4AE 345 2 1
-text11 CODE 0 DA3 DA3 27 2 1
-text12 CODE 0 D58 D58 A 2 1
-text13 CODE 0 DFF DFF 42 2 1
-text14 CODE 0 DCA DCA 35 2 1
-text15 CODE 0 E41 E41 46 2 1
-text16 CODE 0 EDD EDD 5D 2 1
-text17 CODE 0 D62 D62 D 2 1
-text18 CODE 0 4 4 1A 2 1
-text19 CODE 0 D81 D81 22 2 1
-maintext CODE 0 340 340 16E 2 1
+text11 CODE 0 CA8 CA8 27 2 1
+text12 CODE 0 C43 C43 A 2 1
+text13 CODE 0 D04 D04 42 2 1
+text14 CODE 0 CCF CCF 35 2 1
+text15 CODE 0 7 7 46 2 1
+text16 CODE 0 D9C D9C 5D 2 1
+text17 CODE 0 C4D C4D D 2 1
+text18 CODE 0 C6C C6C 1A 2 1
+text19 CODE 0 C86 C86 22 2 1
+maintext CODE 0 22E 22E 280 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
 cstackBANK0 BANK0 1 20 20 30 1 1
 bssBANK0 BANK0 1 50 50 1D 1 1
-strings STRING 0 800 800 4D 2 1
-clrtext CODE 0 D50 D50 8 2 1
+strings STRING 0 800 800 58 2 1
+clrtext CODE 0 C3B C3B 8 2 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
+$C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
 idloc IDLOC 5 2000 2000 4 2 1
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 2 2 1
@@ -58,25 +58,25 @@ BANK0 6D-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-3 2
-CONST 84D-D4F 2
+CONST 3-6 2
+CONST 858-C3A 2
 CONST 1000-1FFF 2
-ENTRY 3-3 2
-ENTRY 84D-D4F 2
+ENTRY 3-6 2
+ENTRY 858-C3A 2
 ENTRY 1000-1FFF 2
-CODE 3-3 2
-CODE 84D-D4F 2
+CODE 3-6 2
+CODE 858-C3A 2
 CODE 1000-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
-STRCODE 3-3 2
-STRCODE 84D-D4F 2
+STRCODE 3-6 2
+STRCODE 858-C3A 2
 STRCODE 1000-1FFF 2
-STRING 3-3 2
-STRING 84D-D4F 2
+STRING 3-6 2
+STRING 858-C3A 2
 STRING 1000-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -92,122 +92,122 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\TSC230.X.production.o
-7F3 cinit CODE >927:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7F3 cinit CODE >930:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7F3 cinit CODE >977:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7F4 cinit CODE >978:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7F5 cinit CODE >979:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7F6 cinit CODE >980:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7F7 cinit CODE >981:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7FC cinit CODE >987:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7FC cinit CODE >989:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-7FD cinit CODE >990:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D81 text19 CODE >13:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D82 text19 CODE >14:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D86 text19 CODE >15:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D8A text19 CODE >16:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D8A text19 CODE >17:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D8D text19 CODE >19:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D91 text19 CODE >20:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D93 text19 CODE >21:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D93 text19 CODE >22:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D94 text19 CODE >24:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D98 text19 CODE >25:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D9A text19 CODE >26:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D9A text19 CODE >27:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D9B text19 CODE >29:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D9F text19 CODE >30:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DA1 text19 CODE >31:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DA1 text19 CODE >32:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DA2 text19 CODE >33:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-4 text18 CODE >35:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-5 text18 CODE >36:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-8 text18 CODE >37:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E text18 CODE >38:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-11 text18 CODE >39:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-1A text18 CODE >40:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-1D text18 CODE >41:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D62 text17 CODE >43:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D62 text17 CODE >44:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D68 text17 CODE >45:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D6E text17 CODE >46:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-EDD text16 CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-EDD text16 CODE >66:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-EE3 text16 CODE >67:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-EEC text16 CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-EF2 text16 CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-EFB text16 CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F01 text16 CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F09 text16 CODE >72:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F0F text16 CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F15 text16 CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F1B text16 CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F21 text16 CODE >77:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F27 text16 CODE >78:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F2D text16 CODE >79:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F33 text16 CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-F39 text16 CODE >81:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E41 text15 CODE >48:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E42 text15 CODE >50:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E47 text15 CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E4A text15 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E4D text15 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E50 text15 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E54 text15 CODE >53:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E57 text15 CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E5D text15 CODE >55:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E63 text15 CODE >56:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E6A text15 CODE >57:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E6D text15 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E70 text15 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E73 text15 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E77 text15 CODE >59:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E7A text15 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E80 text15 CODE >61:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E86 text15 CODE >63:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DCA text14 CODE >83:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DCB text14 CODE >85:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DCE text14 CODE >86:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DD1 text14 CODE >87:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DD4 text14 CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DD7 text14 CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DDA text14 CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DE2 text14 CODE >89:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DE5 text14 CODE >90:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DEA text14 CODE >91:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DED text14 CODE >92:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DF3 text14 CODE >93:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DF6 text14 CODE >94:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DFB text14 CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DFE text14 CODE >96:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DFF text13 CODE >98:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-DFF text13 CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E02 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E07 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E20 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E29 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E3C text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-E40 text13 CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\LCD.c
-D58 text12 CODE >8:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-D58 text12 CODE >9:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-D5B text12 CODE >10:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-D5F text12 CODE >11:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-D60 text12 CODE >12:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-D61 text12 CODE >14:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-DA3 text11 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DA4 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DA6 text11 CODE >6:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DAD text11 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DB1 text11 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DB3 text11 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DB7 text11 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DB7 text11 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DB8 text11 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DBC text11 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DBE text11 CODE >55:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DC0 text11 CODE >56:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DC5 text11 CODE >59:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
-DC9 text11 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+7F3 cinit CODE >944:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7F3 cinit CODE >947:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7F3 cinit CODE >994:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7F4 cinit CODE >995:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7F5 cinit CODE >996:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7F6 cinit CODE >997:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7F7 cinit CODE >998:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7FC cinit CODE >1004:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7FC cinit CODE >1006:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+7FD cinit CODE >1007:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C86 text19 CODE >13:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C87 text19 CODE >14:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C8B text19 CODE >15:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C8F text19 CODE >16:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C8F text19 CODE >17:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C92 text19 CODE >19:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C96 text19 CODE >20:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C98 text19 CODE >21:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C98 text19 CODE >22:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C99 text19 CODE >24:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C9D text19 CODE >25:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C9F text19 CODE >26:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C9F text19 CODE >27:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CA0 text19 CODE >29:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CA4 text19 CODE >30:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CA6 text19 CODE >31:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CA6 text19 CODE >32:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CA7 text19 CODE >33:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C6C text18 CODE >35:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C6D text18 CODE >36:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C70 text18 CODE >37:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C76 text18 CODE >38:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C79 text18 CODE >39:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C82 text18 CODE >40:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C85 text18 CODE >41:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C4D text17 CODE >43:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C4D text17 CODE >44:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C53 text17 CODE >45:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C59 text17 CODE >46:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D9C text16 CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D9C text16 CODE >66:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DA2 text16 CODE >67:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DAB text16 CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DB1 text16 CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DBA text16 CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DC0 text16 CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DC8 text16 CODE >72:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DCE text16 CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DD4 text16 CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DDA text16 CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DE0 text16 CODE >77:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DE6 text16 CODE >78:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DEC text16 CODE >79:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DF2 text16 CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+DF8 text16 CODE >81:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+7 text15 CODE >48:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+8 text15 CODE >50:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D text15 CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+10 text15 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+13 text15 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+16 text15 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+1A text15 CODE >53:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+1D text15 CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+23 text15 CODE >55:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+29 text15 CODE >56:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+30 text15 CODE >57:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+33 text15 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+36 text15 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+39 text15 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+3D text15 CODE >59:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+40 text15 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+46 text15 CODE >61:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+4C text15 CODE >63:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CCF text14 CODE >83:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CD0 text14 CODE >85:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CD3 text14 CODE >86:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CD6 text14 CODE >87:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CD9 text14 CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CDC text14 CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CDF text14 CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CE7 text14 CODE >89:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CEA text14 CODE >90:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CEF text14 CODE >91:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CF2 text14 CODE >92:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CF8 text14 CODE >93:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+CFB text14 CODE >94:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D00 text14 CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D03 text14 CODE >96:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D04 text13 CODE >98:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D04 text13 CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D07 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D0C text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D25 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D2E text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D41 text13 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+D45 text13 CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\LCD.c
+C43 text12 CODE >8:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+C43 text12 CODE >9:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+C46 text12 CODE >10:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+C4A text12 CODE >11:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+C4B text12 CODE >12:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+C4C text12 CODE >14:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+CA8 text11 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CA9 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CAB text11 CODE >6:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CB2 text11 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CB6 text11 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CB8 text11 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CBC text11 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CBC text11 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CBD text11 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CC1 text11 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CC3 text11 CODE >55:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CC5 text11 CODE >56:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CCA text11 CODE >59:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+CCE text11 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
 4AE text10 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
 4AE text10 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
 4B3 text10 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
@@ -412,279 +412,299 @@ DC9 text11 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\
 7E6 text10 CODE >201:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
 7EA text10 CODE >203:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
 7F2 text10 CODE >205:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
-E7 text9 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-E7 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-F2 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-FB text9 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-104 text9 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-10A text9 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-10E text9 CODE >50:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-10F text9 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-117 text9 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-119 text9 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-11D text9 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-120 text9 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-125 text9 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-126 text9 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-12C text9 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-12E text9 CODE >58:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-137 text9 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-139 text9 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-13E text9 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-140 text9 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-147 text9 CODE >64:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-149 text9 CODE >62:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-149 text9 CODE >65:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-14E text9 CODE >67:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-153 text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-158 text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-15A text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-15C text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-15E text9 CODE >70:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-15F text8 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-160 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-169 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-172 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-174 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-176 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-178 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-179 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-181 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-181 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-185 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-189 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-192 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-194 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-195 text8 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-199 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-19A text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1A0 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1A2 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1A9 text8 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1AD text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1B0 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1B4 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1B8 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1BB text8 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1BC text8 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1C2 text8 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1C4 text8 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1C4 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1CB text8 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1CD text8 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1CF text8 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1D6 text8 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1DC text8 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E0 text8 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E4 text8 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1EC text8 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1EE text8 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1F4 text8 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1FA text8 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-204 text8 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-20D text8 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-20E text8 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-216 text8 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-F3A text7 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F3A text7 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F3D text7 CODE >61:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F3E text7 CODE >62:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F44 text7 CODE >63:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F44 text7 CODE >64:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F4A text7 CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F4A text7 CODE >66:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F4E text7 CODE >67:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F50 text7 CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F51 text7 CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F51 text7 CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F55 text7 CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F5B text7 CODE >72:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F5C text7 CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F5E text7 CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F9C text7 CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F9D text6 CODE >38:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-F9D text6 CODE >40:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FA0 text6 CODE >41:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FA1 text6 CODE >42:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FA7 text6 CODE >43:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FA7 text6 CODE >44:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FAD text6 CODE >45:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FAD text6 CODE >46:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FB1 text6 CODE >47:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FB3 text6 CODE >48:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FB4 text6 CODE >49:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FB4 text6 CODE >50:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FB8 text6 CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FB9 text6 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FBF text6 CODE >53:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FC1 text6 CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-FFF text6 CODE >55:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-1E text5 CODE >17:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-1E text5 CODE >19:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-21 text5 CODE >20:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-22 text5 CODE >21:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-28 text5 CODE >22:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-28 text5 CODE >23:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-2E text5 CODE >24:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-2E text5 CODE >25:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-32 text5 CODE >26:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-34 text5 CODE >27:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-35 text5 CODE >28:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-35 text5 CODE >30:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-39 text5 CODE >31:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-3A text5 CODE >32:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-40 text5 CODE >33:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-42 text5 CODE >34:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-80 text5 CODE >35:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\TCS230.c
-D6F text4 CODE >112:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D6F text4 CODE >113:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D72 text4 CODE >114:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D73 text4 CODE >115:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D77 text4 CODE >116:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D78 text4 CODE >117:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D7B text4 CODE >118:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D7F text4 CODE >119:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D80 text4 CODE >125:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-81 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-81 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-89 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-8D text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-91 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-93 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-94 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-96 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-9D text3 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-A1 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-A5 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-A7 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-AE text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-B0 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-B4 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-B8 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-BC text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-C0 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-C3 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-C7 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-CB text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-CE text3 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-CF text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-D0 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-D6 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-D8 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-DE text3 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-E6 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-E87 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E87 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E8D text2 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E91 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E93 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E94 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E96 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-E9D text2 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EA1 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EA5 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EA7 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EAB text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EAF text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EB3 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EB7 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EBA text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EBE text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EC2 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EC5 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EC6 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-ECC text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-ECE text2 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-ED4 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-EDC text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
-217 text1 CODE >505:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-21A text1 CODE >550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-21C text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-21D text1 CODE >555:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-223 text1 CODE >558:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-22C text1 CODE >559:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-22D text1 CODE >565:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-22F text1 CODE >667:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-22F text1 CODE >669:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-230 text1 CODE >670:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-231 text1 CODE >844:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-235 text1 CODE >845:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-236 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-245 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-24A text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-24D text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-250 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-253 text1 CODE >1307:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-257 text1 CODE >1308:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-26A text1 CODE >1312:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-27C text1 CODE >1331:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-27E text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-281 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-284 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-286 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2A4 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2A8 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2AC text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2B0 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2B5 text1 CODE >1333:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2BF text1 CODE >1498:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2C6 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2C7 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2D2 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2D5 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2D7 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-314 text1 CODE >1550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-31D text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-31F text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-324 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-32B text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-33B text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-33F text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-340 maintext CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-340 maintext CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-345 maintext CODE >53:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-348 maintext CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-34D maintext CODE >55:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-352 maintext CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-357 maintext CODE >61:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-35F maintext CODE >62:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-368 maintext CODE >64:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-377 maintext CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-386 maintext CODE >66:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-395 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-3A0 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-3B3 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-3C6 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-3D9 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-3EC maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-3FF maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-405 maintext CODE >81:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-40B maintext CODE >82:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-413 maintext CODE >83:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-41C maintext CODE >84:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-41D maintext CODE >87:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-421 maintext CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-429 maintext CODE >89:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-432 maintext CODE >93:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-444 maintext CODE >94:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-456 maintext CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-468 maintext CODE >99:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-470 maintext CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-479 maintext CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-481 maintext CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-48A maintext CODE >103:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-492 maintext CODE >104:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-49B maintext CODE >106:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\proyecto\TSC230.X\main.c
-D50 clrtext CODE >964:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D50 clrtext CODE >965:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D51 clrtext CODE >966:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D51 clrtext CODE >967:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D52 clrtext CODE >968:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D53 clrtext CODE >969:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D54 clrtext CODE >970:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D55 clrtext CODE >971:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D56 clrtext CODE >972:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
-D57 clrtext CODE >973:C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.s
+F88 text9 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+F88 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+F93 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+F9C text9 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FA5 text9 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FAB text9 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FAF text9 CODE >50:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FB0 text9 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FB8 text9 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FBA text9 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FBE text9 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FC1 text9 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FC6 text9 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FC7 text9 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FCD text9 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FCF text9 CODE >58:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FD8 text9 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FDA text9 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FDF text9 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FE1 text9 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FE8 text9 CODE >64:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FEA text9 CODE >62:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FEA text9 CODE >65:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FEF text9 CODE >67:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FF4 text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FF9 text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FFB text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FFD text9 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+FFF text9 CODE >70:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+4D text8 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+4E text8 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+57 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+60 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+62 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+64 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+66 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+67 text8 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+6F text8 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+6F text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+73 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+77 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+80 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+82 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+83 text8 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+87 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+88 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+8E text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+90 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+97 text8 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+9B text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+9E text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+A2 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+A6 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+A9 text8 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+AA text8 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+B0 text8 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+B2 text8 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+B2 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+B9 text8 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+BB text8 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+BD text8 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+C4 text8 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+CA text8 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+CE text8 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+D2 text8 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+DA text8 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+DC text8 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+E2 text8 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+E8 text8 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+F2 text8 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+FB text8 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+FC text8 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+104 text8 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+DF9 text7 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+DF9 text7 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+DFC text7 CODE >61:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+DFD text7 CODE >62:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E03 text7 CODE >63:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E03 text7 CODE >64:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E09 text7 CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E09 text7 CODE >66:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E0D text7 CODE >67:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E0F text7 CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E10 text7 CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E10 text7 CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E14 text7 CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E1A text7 CODE >72:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E1B text7 CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E1D text7 CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E5B text7 CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E5C text6 CODE >38:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E5C text6 CODE >40:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E5F text6 CODE >41:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E60 text6 CODE >42:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E66 text6 CODE >43:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E66 text6 CODE >44:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E6C text6 CODE >45:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E6C text6 CODE >46:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E70 text6 CODE >47:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E72 text6 CODE >48:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E73 text6 CODE >49:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E73 text6 CODE >50:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E77 text6 CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E78 text6 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E7E text6 CODE >53:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+E80 text6 CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EBE text6 CODE >55:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EBF text5 CODE >17:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EBF text5 CODE >19:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EC2 text5 CODE >20:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EC3 text5 CODE >21:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EC9 text5 CODE >22:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EC9 text5 CODE >23:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+ECF text5 CODE >24:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+ECF text5 CODE >25:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+ED3 text5 CODE >26:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+ED5 text5 CODE >27:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+ED6 text5 CODE >28:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+ED6 text5 CODE >30:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EDA text5 CODE >31:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EDB text5 CODE >32:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EE1 text5 CODE >33:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+EE3 text5 CODE >34:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+F21 text5 CODE >35:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\TCS230.c
+C5A text4 CODE >112:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C5A text4 CODE >113:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C5D text4 CODE >114:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C5E text4 CODE >115:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C62 text4 CODE >116:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C63 text4 CODE >117:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C66 text4 CODE >118:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C6A text4 CODE >119:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C6B text4 CODE >125:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+F22 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F22 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F2A text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F2E text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F32 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F34 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F35 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F37 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F3E text3 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F42 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F46 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F48 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F4F text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F51 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F55 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F59 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F5D text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F61 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F64 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F68 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F6C text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F6F text3 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F70 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F71 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F77 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F79 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F7F text3 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+F87 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+D46 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D46 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D4C text2 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D50 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D52 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D53 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D55 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D5C text2 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D60 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D64 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D66 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D6A text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D6E text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D72 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D76 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D79 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D7D text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D81 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D84 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D85 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D8B text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D8D text2 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D93 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+D9B text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\llmod.c
+105 text1 CODE >505:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+108 text1 CODE >550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+10A text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+10B text1 CODE >555:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+111 text1 CODE >558:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11A text1 CODE >559:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11B text1 CODE >565:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11D text1 CODE >667:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11D text1 CODE >669:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11E text1 CODE >670:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11F text1 CODE >844:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+123 text1 CODE >845:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+124 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+133 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+138 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+13B text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+13E text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+141 text1 CODE >1307:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+145 text1 CODE >1308:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+158 text1 CODE >1312:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+16A text1 CODE >1331:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+16C text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+16F text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+172 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+174 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+192 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+196 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+19A text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+19E text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1A3 text1 CODE >1333:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1AD text1 CODE >1498:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1B4 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1B5 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1C0 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1C3 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1C5 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+202 text1 CODE >1550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+20B text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+20D text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+212 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+219 text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+229 text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+22D text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+22E maintext CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+22E maintext CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+233 maintext CODE >53:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+236 maintext CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+23B maintext CODE >55:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+240 maintext CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+245 maintext CODE >61:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+24D maintext CODE >62:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+256 maintext CODE >64:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+265 maintext CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+274 maintext CODE >66:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+283 maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+28E maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2A1 maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2B4 maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2C7 maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2DA maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2ED maintext CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2F3 maintext CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+2F9 maintext CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+301 maintext CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+30A maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+317 maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+32A maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+33D maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+350 maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+363 maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+376 maintext CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+37C maintext CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+382 maintext CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+38A maintext CODE >77:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+393 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+3A0 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+3B3 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+3C6 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+3D9 maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+3EC maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+3FF maintext CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+405 maintext CODE >81:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+40B maintext CODE >82:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+413 maintext CODE >83:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+41C maintext CODE >84:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+41D maintext CODE >87:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+421 maintext CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+429 maintext CODE >89:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+432 maintext CODE >93:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+444 maintext CODE >94:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+456 maintext CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+468 maintext CODE >99:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+470 maintext CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+479 maintext CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+481 maintext CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+48A maintext CODE >103:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+492 maintext CODE >104:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+49B maintext CODE >106:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
+C3B clrtext CODE >981:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C3B clrtext CODE >982:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C3C clrtext CODE >983:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C3C clrtext CODE >984:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C3D clrtext CODE >985:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C3E clrtext CODE >986:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C3F clrtext CODE >987:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C40 clrtext CODE >988:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C41 clrtext CODE >989:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
+C42 clrtext CODE >990:C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -703,22 +723,22 @@ __Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
-_Lcd_Init 1DBA 0 CODE 0 text16 dist/default/production\TSC230.X.production.o
-_Lcd_Port 1B02 0 CODE 0 text19 dist/default/production\TSC230.X.production.o
+_Lcd_Init 1B38 0 CODE 0 text16 dist/default/production\TSC230.X.production.o
+_Lcd_Port 190C 0 CODE 0 text19 dist/default/production\TSC230.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _T1CONbits 10 0 ABS 0 - dist/default/production\TSC230.X.production.o
-__end_of_Lcd_Init 1E74 0 CODE 0 text16 dist/default/production\TSC230.X.production.o
-__end_of_Lcd_Port 1B46 0 CODE 0 text19 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Init 1BF2 0 CODE 0 text16 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Port 1950 0 CODE 0 text19 dist/default/production\TSC230.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-_config_TCS230 1AB0 0 CODE 0 text12 dist/default/production\TSC230.X.production.o
+_config_TCS230 1886 0 CODE 0 text12 dist/default/production\TSC230.X.production.o
 _TMR1 E 0 ABS 0 - dist/default/production\TSC230.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
+___sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
 _azul 65 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
-_main 680 0 CODE 0 maintext dist/default/production\TSC230.X.production.o
+_main 45C 0 CODE 0 maintext dist/default/production\TSC230.X.production.o
 _rojo 69 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\TSC230.X.production.o
-_Lcd_Write_Char 1B94 0 CODE 0 text14 dist/default/production\TSC230.X.production.o
-start 0 0 CODE 0 init C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
+_Lcd_Write_Char 199E 0 CODE 0 text14 dist/default/production\TSC230.X.production.o
+start 0 0 CODE 0 init C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
 ___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 ___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 ___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
@@ -729,29 +749,29 @@ Lcd_Write_Char@temp 72 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.
 _blue_freq 54 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ?_read_green 44 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\TSC230.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\TSC230.X.production.o
 ___llmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
-__end_of_Lcd_Write_Char 1BFE 0 CODE 0 text14 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Write_Char 1A08 0 CODE 0 text14 dist/default/production\TSC230.X.production.o
 _ANSELH 189 0 ABS 0 - dist/default/production\TSC230.X.production.o
-__end_of__Umul8_16 1B94 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
+__end_of__Umul8_16 199E 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__Umul8_16 1B46 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
+__Umul8_16 1950 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
 __end_of___flmul FE6 0 CODE 0 text10 dist/default/production\TSC230.X.production.o
-__end_of___fltol 2BE 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
-__end_of___lldiv 1CE 0 CODE 0 text3 dist/default/production\TSC230.X.production.o
-__end_of___llmod 1DBA 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
+__end_of___fltol 2000 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
+__end_of___lldiv 1F10 0 CODE 0 text3 dist/default/production\TSC230.X.production.o
+__end_of___llmod 1B38 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-___stacklo 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
+___stackhi 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+___stacklo 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
 read_green@temp_freq 49 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 _dpowers 1020 0 STRING 0 strings dist/default/production\TSC230.X.production.o
 ___flmul@a 24 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
@@ -760,12 +780,12 @@ read_red@temp_freq 49 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.pro
 Lcd_Set_Cursor@temp 79 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 ___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 start_initialization FE6 0 CODE 0 cinit dist/default/production\TSC230.X.production.o
-__end_of_config_TCS230 1AC4 0 CODE 0 text12 dist/default/production\TSC230.X.production.o
+__end_of_config_TCS230 189A 0 CODE 0 text12 dist/default/production\TSC230.X.production.o
 ___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
-_Lcd_Write_String 1BFE 0 CODE 0 text13 dist/default/production\TSC230.X.production.o
-clear_ram0 1AA0 0 CODE 0 clrtext dist/default/production\TSC230.X.production.o
+_Lcd_Write_String 1A08 0 CODE 0 text13 dist/default/production\TSC230.X.production.o
+clear_ram0 1876 0 CODE 0 clrtext dist/default/production\TSC230.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
+___int_sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -778,7 +798,7 @@ __Hmaintext 0 0 ABS 0 maintext -
 ___xxtofl@arg 7A 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 ___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 ___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
-__end_of_sprintf 680 0 CODE 0 text1 dist/default/production\TSC230.X.production.o
+__end_of_sprintf 45C 0 CODE 0 text1 dist/default/production\TSC230.X.production.o
 ?_read_blue 44 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4012 0 CONFIG 4 config -
@@ -822,46 +842,46 @@ __S1 7E 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _green_freq 50 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
 sprintf@val 37 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
-__end_of_Lcd_Write_String 1C82 0 CODE 0 text13 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Write_String 1A8C 0 CODE 0 text13 dist/default/production\TSC230.X.production.o
 _estado 5F 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
-___xxtofl 2BE 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
-__end_of_Lcd_Clear 1ADE 0 CODE 0 text17 dist/default/production\TSC230.X.production.o
+___xxtofl 9A 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Clear 18B4 0 CODE 0 text17 dist/default/production\TSC230.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\TSC230.X.production.o
 Lcd_Write_String@a 75 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 Lcd_Write_String@i 7A 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\aldoa\AppData\Local\Temp\xcAsf5c.o
-__end_of___xxtofl 42E 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
-__end_of_Lcd_Cmd 3C 0 CODE 0 text18 dist/default/production\TSC230.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\aldoa\AppData\Local\Temp\xcAsnb4.o
+__end_of___xxtofl 20A 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Cmd 190C 0 CODE 0 text18 dist/default/production\TSC230.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 sprintf@flag 34 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 sprintf@prec 35 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 __ptext10 95C 0 CODE 0 text10 dist/default/production\TSC230.X.production.o
-__ptext11 1B46 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
-__ptext12 1AB0 0 CODE 0 text12 dist/default/production\TSC230.X.production.o
-__ptext13 1BFE 0 CODE 0 text13 dist/default/production\TSC230.X.production.o
-__ptext14 1B94 0 CODE 0 text14 dist/default/production\TSC230.X.production.o
-__ptext15 1C82 0 CODE 0 text15 dist/default/production\TSC230.X.production.o
-__ptext16 1DBA 0 CODE 0 text16 dist/default/production\TSC230.X.production.o
-__ptext17 1AC4 0 CODE 0 text17 dist/default/production\TSC230.X.production.o
-__ptext18 8 0 CODE 0 text18 dist/default/production\TSC230.X.production.o
-__ptext19 1B02 0 CODE 0 text19 dist/default/production\TSC230.X.production.o
-_Lcd_Clear 1AC4 0 CODE 0 text17 dist/default/production\TSC230.X.production.o
-_Lcd_Set_Cursor 1C82 0 CODE 0 text15 dist/default/production\TSC230.X.production.o
+__ptext11 1950 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
+__ptext12 1886 0 CODE 0 text12 dist/default/production\TSC230.X.production.o
+__ptext13 1A08 0 CODE 0 text13 dist/default/production\TSC230.X.production.o
+__ptext14 199E 0 CODE 0 text14 dist/default/production\TSC230.X.production.o
+__ptext15 E 0 CODE 0 text15 dist/default/production\TSC230.X.production.o
+__ptext16 1B38 0 CODE 0 text16 dist/default/production\TSC230.X.production.o
+__ptext17 189A 0 CODE 0 text17 dist/default/production\TSC230.X.production.o
+__ptext18 18D8 0 CODE 0 text18 dist/default/production\TSC230.X.production.o
+__ptext19 190C 0 CODE 0 text19 dist/default/production\TSC230.X.production.o
+_Lcd_Clear 189A 0 CODE 0 text17 dist/default/production\TSC230.X.production.o
+_Lcd_Set_Cursor E 0 CODE 0 text15 dist/default/production\TSC230.X.production.o
 ___flmul 95C 0 CODE 0 text10 dist/default/production\TSC230.X.production.o
-___fltol 1CE 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
-___lldiv 102 0 CODE 0 text3 dist/default/production\TSC230.X.production.o
-___llmod 1D0E 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
-__pmaintext 680 0 CODE 0 maintext dist/default/production\TSC230.X.production.o
+___fltol 1F10 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
+___lldiv 1E44 0 CODE 0 text3 dist/default/production\TSC230.X.production.o
+___llmod 1A8C 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
+__pmaintext 45C 0 CODE 0 maintext dist/default/production\TSC230.X.production.o
 __Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_read_green 1F3A 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
-_read_red 3C 0 CODE 0 text5 dist/default/production\TSC230.X.production.o
+_read_green 1CB8 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
+_read_red 1D7E 0 CODE 0 text5 dist/default/production\TSC230.X.production.o
 _red_freq 58 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
 __end_of__stringtab 1020 0 STRING 0 strings dist/default/production\TSC230.X.production.o
-__end_of_read_red 102 0 CODE 0 text5 dist/default/production\TSC230.X.production.o
+__end_of_read_red 1E44 0 CODE 0 text5 dist/default/production\TSC230.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -873,7 +893,7 @@ __Lend_init 0 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 ___fltol@exp1 43 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\TSC230.X.production.o
-__end_of_Lcd_Set_Cursor 1D0E 0 CODE 0 text15 dist/default/production\TSC230.X.production.o
+__end_of_Lcd_Set_Cursor 9A 0 CODE 0 text15 dist/default/production\TSC230.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
 Lcd_Set_Cursor@a 76 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 Lcd_Set_Cursor@b 74 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
@@ -886,18 +906,18 @@ __Lstrings 0 0 ABS 0 strings -
 ?___llmod 20 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__ptext1 42E 0 CODE 0 text1 dist/default/production\TSC230.X.production.o
-__ptext2 1D0E 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
-__ptext3 102 0 CODE 0 text3 dist/default/production\TSC230.X.production.o
-__ptext4 1ADE 0 CODE 0 text4 dist/default/production\TSC230.X.production.o
-__ptext5 3C 0 CODE 0 text5 dist/default/production\TSC230.X.production.o
-__ptext6 1F3A 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
-__ptext7 1E74 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
-__ptext8 2BE 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
-__ptext9 1CE 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
+__ptext1 20A 0 CODE 0 text1 dist/default/production\TSC230.X.production.o
+__ptext2 1A8C 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
+__ptext3 1E44 0 CODE 0 text3 dist/default/production\TSC230.X.production.o
+__ptext4 18B4 0 CODE 0 text4 dist/default/production\TSC230.X.production.o
+__ptext5 1D7E 0 CODE 0 text5 dist/default/production\TSC230.X.production.o
+__ptext6 1CB8 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
+__ptext7 1BF2 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
+__ptext8 9A 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
+__ptext9 1F10 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
 ?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
-__end_of_read_green 2000 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
-_sprintf 42E 0 CODE 0 text1 dist/default/production\TSC230.X.production.o
+__end_of_read_green 1D7E 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
+_sprintf 20A 0 CODE 0 text1 dist/default/production\TSC230.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 ?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -908,7 +928,7 @@ ___fltol@sign1 42 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.product
 __Lreset_vec 0 0 CODE 0 reset_vec -
 ___fltol@f1 3A 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\TSC230.X.production.o
-__end_of_read_blue 1F3A 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
+__end_of_read_blue 1CB8 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
@@ -917,7 +937,7 @@ ___lldiv@quotient 79 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.pr
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 __Hend_init 6 0 CODE 0 end_init -
 ___llmod@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
-_read_blue 1E74 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
+_read_blue 1BF2 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
 ___llmod@counter 29 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 sprintf@c 3D 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 sprintf@f 2A 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
@@ -928,13 +948,13 @@ __end_of_dpowers 1070 0 STRING 0 strings dist/default/production\TSC230.X.produc
 _PORTD 8 0 ABS 0 - dist/default/production\TSC230.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\TSC230.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\TSC230.X.production.o
-__end_of_setup 1B02 0 CODE 0 text4 dist/default/production\TSC230.X.production.o
+__end_of_setup 18D8 0 CODE 0 text4 dist/default/production\TSC230.X.production.o
 ?_read_red 44 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_setup 1ADE 0 CODE 0 text4 dist/default/production\TSC230.X.production.o
+_setup 18B4 0 CODE 0 text4 dist/default/production\TSC230.X.production.o
 _verde 61 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
-_Lcd_Cmd 8 0 CODE 0 text18 dist/default/production\TSC230.X.production.o
+_Lcd_Cmd 18D8 0 CODE 0 text18 dist/default/production\TSC230.X.production.o
 __initialization FE6 0 CODE 0 cinit dist/default/production\TSC230.X.production.o
 ___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
 __pbssBANK0 50 0 BANK0 1 bssBANK0 dist/default/production\TSC230.X.production.o
@@ -967,31 +987,31 @@ Lcd_Write_Char@y 73 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.pro
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7F3 FE6 D 2
-text1 0 217 42E 129 2
-text2 0 E87 1D0E 56 2
-text3 0 81 102 66 2
-text4 0 D6F 1ADE 12 2
-text5 0 1E 3C 63 2
-text6 0 F9D 1F3A 63 2
-text7 0 F3A 1E74 63 2
-text8 0 15F 2BE B8 2
-text9 0 E7 1CE 78 2
+text1 0 105 20A 129 2
+text2 0 D46 1A8C 56 2
+text3 0 F22 1E44 66 2
+text4 0 C5A 18B4 12 2
+text5 0 EBF 1D7E 63 2
+text6 0 E5C 1CB8 63 2
+text7 0 DF9 1BF2 63 2
+text8 0 4D 9A B8 2
+text9 0 F88 1F10 78 2
 text10 0 4AE 95C 345 2
-text11 0 DA3 1B46 27 2
-text12 0 D58 1AB0 A 2
-text13 0 DFF 1BFE 42 2
-text14 0 DCA 1B94 35 2
-text15 0 E41 1C82 46 2
-text16 0 EDD 1DBA 5D 2
-text17 0 D62 1AC4 D 2
-text18 0 4 8 1A 2
-text19 0 D81 1B02 22 2
-maintext 0 340 680 16E 2
+text11 0 CA8 1950 27 2
+text12 0 C43 1886 A 2
+text13 0 D04 1A08 42 2
+text14 0 CCF 199E 35 2
+text15 0 7 E 46 2
+text16 0 D9C 1B38 5D 2
+text17 0 C4D 189A D 2
+text18 0 C6C 18D8 1A 2
+text19 0 C86 190C 22 2
+maintext 0 22E 45C 280 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 4D 1
 reset_vec 0 0 0 3 2
-strings 0 800 1000 4D 2
-clrtext 0 D50 1AA0 8 2
+strings 0 800 1000 58 2
+clrtext 0 C3B 1876 8 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

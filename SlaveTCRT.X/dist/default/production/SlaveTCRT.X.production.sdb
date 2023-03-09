@@ -1,0 +1,158 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"51 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"86
+[v _main main `(v  1 e 1 0 ]
+"133
+[v _setup setup `(v  1 e 1 0 ]
+"167 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S171 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"184
+[u S180 . 1 `S171 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES180  1 e 1 @5 ]
+"229
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S22 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"554
+[u S30 . 1 `S22 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES30  1 e 1 @12 ]
+"844
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S41 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"871
+[s S47 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S52 . 1 `S41 1 . 1 0 `S47 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES52  1 e 1 @20 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S196 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1883
+[s S202 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S207 . 1 `S196 1 . 1 0 `S202 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES207  1 e 1 @143 ]
+[s S68 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2232
+[s S77 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S82 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S88 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S93 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S98 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S103 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S108 . 1 `S68 1 . 1 0 `S77 1 . 1 0 `S82 1 . 1 0 `S88 1 . 1 0 `S93 1 . 1 0 `S98 1 . 1 0 `S103 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES108  1 e 1 @148 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3646
+[v _BF BF `VEb  1 e 0 @1184 ]
+"40 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+[v _estado estado `i  1 e 2 0 ]
+"41
+[v _estado2 estado2 `i  1 e 2 0 ]
+"42
+[v _enviar enviar `uc  1 e 1 0 ]
+"43
+[v _z z `uc  1 e 1 0 ]
+"44
+[v _lectura1 lectura1 `i  1 e 2 0 ]
+"45
+[v _lectura2 lectura2 `i  1 e 2 0 ]
+"86
+[v _main main `(v  1 e 1 0 ]
+{
+"130
+} 0
+"133
+[v _setup setup `(v  1 e 1 0 ]
+{
+"148
+} 0
+"51
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"84
+} 0

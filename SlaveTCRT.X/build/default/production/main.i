@@ -2750,64 +2750,139 @@ extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 # 28 "main.c" 2
 # 38 "main.c"
-# 1 "./LCD.h" 1
-# 47 "./LCD.h"
-void Lcd_Port(char a);
+# 1 "./configI2C.h" 1
+# 18 "./configI2C.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdint.h" 1 3
+# 18 "./configI2C.h" 2
+# 27 "./configI2C.h"
+void I2C_Master_Init(const unsigned long c);
 
-void Lcd_Cmd(char a);
 
-void Lcd_Clear(void);
 
-void Lcd_Set_Cursor(char a, char b);
 
-void Lcd_Init(void);
 
-void Lcd_Write_Char(char a);
 
-void Lcd_Write_String(char *a);
 
-void Lcd_Shift_Right(void);
+void I2C_Master_Wait(void);
 
-void Lcd_Shift_Left(void);
+
+
+void I2C_Master_Start(void);
+
+
+
+void I2C_Master_RepeatedStart(void);
+
+
+
+void I2C_Master_Stop(void);
+
+
+
+
+
+void I2C_Master_Write(unsigned d);
+
+
+
+
+unsigned short I2C_Master_Read(unsigned short a);
+
+
+
+void I2C_Slave_Init(uint8_t address);
 # 38 "main.c" 2
 
 
 int estado;
+int estado2;
+uint8_t enviar;
+uint8_t z;
 int lectura1;
 int lectura2;
 void setup (void);
 
+
+
+
+void __attribute__((picinterrupt(("")))) isr(void){
+   if(PIR1bits.SSPIF == 1){
+
+        SSPCONbits.CKP = 0;
+
+        if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
+            z = SSPBUF;
+            SSPCONbits.SSPOV = 0;
+            SSPCONbits.WCOL = 0;
+            SSPCONbits.CKP = 1;
+        }
+
+        if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
+
+            z = SSPBUF;
+
+            PIR1bits.SSPIF = 0;
+            SSPCONbits.CKP = 1;
+            while(!SSPSTATbits.BF);
+            PORTD = SSPBUF;
+            _delay((unsigned long)((250)*(8000000/4000000.0)));
+
+        }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
+            z = SSPBUF;
+            BF = 0;
+            SSPBUF = PORTB;
+            SSPCONbits.CKP = 1;
+            _delay((unsigned long)((250)*(8000000/4000000.0)));
+            while(SSPSTATbits.BF);
+        }
+
+        PIR1bits.SSPIF = 0;
+    }
+}
+
 void main(void) {
+
     setup();
     TRISD = 0x00;
-    Lcd_Init();
 
-  while(1)
-  {
+    while(1)
+    {
 
-    Lcd_Clear();
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("ESTADO");
-
-    lectura1 = PORTBbits.RB0;
-    lectura2 = PORTBbits.RB1;
+    lectura1 = PORTAbits.RA0;
+    lectura2 = PORTAbits.RA1;
 
     if (lectura1 == 0){
         estado = 1;
-       Lcd_Set_Cursor(2,1);
-       Lcd_Write_String("ENCENDIDO");
     }
     else if (lectura1 == 1) {
         estado = 0;
-        Lcd_Set_Cursor(2,1);
-        Lcd_Write_String("APAGADO");
+    }
+    else if (lectura2 == 0){
+        estado2 = 1;
+    }
+    else if (lectura2 == 1) {
+        estado2 = 0;
+    }
+
+    else if (estado == 1){
+        enviar = 1;
+    }
+
+    else if (estado2 == 1){
+        enviar = 2;
+    }
+
+    else if (estado == 0 && estado2 == 0){
+        enviar = 0;
     }
 
 
 
+    _delay((unsigned long)((10)*(8000000/4000.0)));
 
-    _delay((unsigned long)((500)*(8000000/4000.0)));
-  }
+    PORTB = enviar;
+
+    }
     return;
 }
 
@@ -2815,12 +2890,13 @@ void main(void) {
 void setup(void){
     ANSEL = 0;
     ANSELH = 0;
-    TRISB = 0b00000011;
+    TRISA = 0b00000011;
     TRISD = 0;
     PORTD = 0;
-    PORTB = 0;
+    PORTA = 0;
     OSCCONbits.IRCF = 0b111;
     OSCCONbits.SCS = 1;
+    I2C_Slave_Init(0x20);
 
 
 

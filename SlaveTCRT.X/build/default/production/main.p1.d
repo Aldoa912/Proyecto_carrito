@@ -1,3 +1,3 @@
 build/default/production/main.p1:  \
 main.c  \
-LCD.h 
+configI2C.h 

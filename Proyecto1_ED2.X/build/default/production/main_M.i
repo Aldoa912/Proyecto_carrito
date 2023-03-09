@@ -2887,7 +2887,7 @@ void main(void) {
         _delay((unsigned long)((200)*(8000000/4000.0)));
 
 
-        sprintf(distanciaLCD, "Distancia: %.1fcm", distancia);
+        sprintf(distanciaLCD, "Distancia: %d cm", distancia);
 
         Lcd_Set_Cursor_4bits(1,1);
         Lcd_Write_String_4bits(distanciaLCD);
