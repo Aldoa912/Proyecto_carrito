@@ -73,7 +73,7 @@ void __interrupt() isr(void){
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
             z = SSPBUF;
             BF = 0;
-            SSPBUF = PORTB;
+            SSPBUF = enviar;
             SSPCONbits.CKP = 1;
             __delay_us(250);
             while(SSPSTATbits.BF);
@@ -123,7 +123,6 @@ void main(void) {
     
     __delay_ms(10);
         
-    PORTB = enviar;
         
     }
     return;

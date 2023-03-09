@@ -35,78 +35,101 @@
 #define D6 RD6
 #define D7 RD7
 
-#include "LCD.h"
+
 #include "TCS230.h"
+#include "configI2C.h"
 
 unsigned long red_freq = 0;
 unsigned long blue_freq = 0;
 unsigned long green_freq = 0;
-int estado;
+uint8_t estado;
 char rojo[4];
 char azul[4];
 char verde[4];
 char cont [3];
 void setup (void);
 
+uint8_t z;
+
+void setup(void);
+
+//*****************************************************************************
+// Código de Interrupción 
+//*****************************************************************************
+void __interrupt() isr(void){
+   if(PIR1bits.SSPIF == 1){ 
+
+        SSPCONbits.CKP = 0;
+       
+        if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
+            z = SSPBUF;                 // Read the previous value to clear the buffer
+            SSPCONbits.SSPOV = 0;       // Clear the overflow flag
+            SSPCONbits.WCOL = 0;        // Clear the collision bit
+            SSPCONbits.CKP = 1;         // Enables SCL (Clock)
+        }
+
+        if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
+            //__delay_us(7);
+            z = SSPBUF;                 // Lectura del SSBUF para limpiar el buffer y la bandera BF
+            //__delay_us(2);
+            PIR1bits.SSPIF = 0;         // Limpia bandera de interrupción recepción/transmisión SSP
+            SSPCONbits.CKP = 1;         // Habilita entrada de pulsos de reloj SCL
+            while(!SSPSTATbits.BF);     // Esperar a que la recepción se complete
+            PORTD = SSPBUF;             // Guardar en el PORTD el valor del buffer de recepción
+            __delay_us(250);
+            
+        }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
+            z = SSPBUF;
+            BF = 0;
+            SSPBUF = PORTB;
+            SSPCONbits.CKP = 1;
+            __delay_us(250);
+            while(SSPSTATbits.BF);
+        }
+       
+        PIR1bits.SSPIF = 0;    
+    }
+}
+
 void main(void) {
+  
     setup();
     TRISD = 0x00;
-    Lcd_Init();
     config_TCS230();
 
-  while(1)
-  {
-      
-    Lcd_Clear();
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("COLOR:");  
-//    Lcd_Write_String("ROJO  VERDE  AZUL");  
+    while(1)
+    {   
+        
     red_freq = read_red();
     green_freq = read_green();
     blue_freq = read_blue();
     
     if (red_freq < 130 && red_freq > 122 && green_freq < 150 && green_freq > 140 && blue_freq < 80 && blue_freq > 65){
         estado = 1;
-        Lcd_Set_Cursor(2,1);
-        Lcd_Write_String("VERDE");
     }
     
     if (red_freq < 180 && red_freq > 170 && green_freq < 185 && green_freq > 170 && blue_freq < 75 && blue_freq > 65){
         estado = 2;
-        Lcd_Set_Cursor(2,1);
-        Lcd_Write_String("AZUL");
     }
 //    
     if (red_freq < 100 && red_freq > 70 && green_freq < 210 && green_freq > 160 && blue_freq < 70 && blue_freq > 50){
         estado = 3;
-        Lcd_Set_Cursor(2,1);
-        Lcd_Write_String("ROJO");
     }
     
     else {
         estado = 0;
-        Lcd_Set_Cursor(2,1);
-        Lcd_Write_String("NADA");
     }
     
     
-    sprintf(rojo, "%lu", red_freq);
-    sprintf(azul, "%lu", blue_freq);
-    sprintf(verde, "%lu", green_freq);
-
     
-
-    Lcd_Set_Cursor(2,6);
-    Lcd_Write_String(rojo);
-    Lcd_Set_Cursor(2,10);
-    Lcd_Write_String(verde);
-    Lcd_Set_Cursor(2,14);
-    Lcd_Write_String(azul);
+    __delay_ms(100);
     
-    __delay_ms(200);
-  }
+    
+        
+    }
     return;
 }
+
 
 
 void setup(void){
@@ -117,6 +140,7 @@ void setup(void){
     PORTD = 0;
     OSCCONbits.IRCF = 0b111;        
     OSCCONbits.SCS = 1;
+    I2C_Slave_Init(0x30);     // Inicializar Comuncación I2C
         // Configuración del reloj interno
 
 
