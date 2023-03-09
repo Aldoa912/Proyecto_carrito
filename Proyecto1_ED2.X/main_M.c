@@ -74,6 +74,8 @@ void main(void) {
     
     setupMotores();
     setupPWM();
+    
+    
     CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
     CCPR2L = 125;
 
@@ -96,13 +98,11 @@ void main(void) {
         I2C_Master_Stop();
         __delay_ms(200);
         //distancia = medir_distancia();
-        sprintf(distanciaLCD, "Distancia: %.1f cm", distancia);
+        sprintf(distanciaLCD, "Distancia: %.1f", distancia);
 
         Lcd_Set_Cursor_4bits(1,1);
         Lcd_Write_String_4bits(distanciaLCD);
         
-        dis = distancia;
-        linea = 2;
         
         if (color == 0){
             Lcd_Set_Cursor_4bits(2,1);
@@ -122,6 +122,7 @@ void main(void) {
 
             CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
             CCPR2L = 125;
+            Lcd_Clear_4bits();
             Lcd_Set_Cursor_4bits(2,1);
             Lcd_Write_String_4bits("AZUL");
 
@@ -131,54 +132,60 @@ void main(void) {
 
             CCPR1L = 187; // 75% de ciclo de trabajo (Velocidad Alta)
             CCPR2L = 187;
+            Lcd_Clear_4bits();
             Lcd_Set_Cursor_4bits(2,1);
             Lcd_Write_String_4bits("ROJO");
 
         } // Botón en PORTB2
 
-        else if (distancia < 5){
+        if (distancia < 5){
 
-            PORTDbits.RD0 = 0; // Se configuran en alto todos los pines IN para forzarlo a detenerse
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 0;
-            PORTDbits.RD3 = 0;
+            PORTAbits.RA0 = 0; // Se configuran en alto todos los pines IN para forzarlo a detenerse
+            PORTAbits.RA1 = 0;
+            PORTAbits.RA2 = 0;
+            PORTAbits.RA3 = 0;
+            Lcd_Set_Cursor_4bits(2,7);
+            Lcd_Write_String_4bits("TAPADO");  
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("N");  
 
         } // Botón en PORTB3
 
-        else if (linea == 0){
+        if (distancia > 5){
 
-            PORTDbits.RD0 = 1; // Se configuran los pines IN para ir hacia adelante
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 1;
-            PORTDbits.RD3 = 0;
+            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante
+            PORTAbits.RA1 = 1;
+            PORTAbits.RA2 = 1;
+            PORTAbits.RA3 = 0;
             Lcd_Set_Cursor_4bits(2,7);
             Lcd_Write_String_4bits("LIBRE");  
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("N");  
         } // Botón en PORTB4
 
-        else if (linea == 1){
+        if (linea == 1){
 
-            PORTDbits.RD0 = 1; // Se configuran los pines IN para ir hacia adelante
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 0;
-            PORTDbits.RD3 = 0;
-            Lcd_Set_Cursor_4bits(2,7);
-            Lcd_Write_String_4bits("LINEA");
+            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante
+            PORTAbits.RA1 = 1;
+            PORTAbits.RA2 = 0;
+            PORTAbits.RA3 = 0;
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("!");
 
         } // Botón en PORTB4
         
-        else if (linea == 2){
+        if (linea == 2){
 
-            PORTDbits.RD0 = 0; // Se configuran los pines IN para ir hacia adelante
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 1;
-            PORTDbits.RD3 = 0;
-            Lcd_Set_Cursor_4bits(2,7);
-            Lcd_Write_String_4bits("LINEA");
+            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante
+            PORTAbits.RA1 = 0;
+            PORTAbits.RA2 = 1;
+            PORTAbits.RA3 = 0;
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("!");
 
         } // Botón en PORTB4
         // Esperar un poco antes de leer los botones de nuevo
-        __delay_ms(50);
-
+        __delay_ms(10);
 
         
 //        velocidad_motores();
@@ -197,7 +204,7 @@ void setup (void){
     ANSELH = 0;
 
     TRISA = 0;              //Configuración del PORTA como output
-    TRISB = 0b00000010;     //Configuración del PORTB como input
+    TRISB = 0b00000000;     //Configuración del PORTB como input
     TRISD = 0;              //Configuración del PORTD como output
     
 //    OPTION_REGbits.nRBPU = 0;   //Habilitamos los pull-ups del PORTB

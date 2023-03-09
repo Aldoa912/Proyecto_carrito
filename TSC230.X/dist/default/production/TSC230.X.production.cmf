@@ -34,7 +34,7 @@ bssBANK0 BANK0 1 63 63 C 1 1
 bssBANK1 BANK1 1 A0 A0 4 1 1
 bssCOMMON COMMON 1 7A 7A 1 1 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+$C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
@@ -88,32 +88,32 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\TSC230.X.production.o
-F cinit CODE >828:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-F cinit CODE >831:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-F cinit CODE >863:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-10 cinit CODE >866:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-11 cinit CODE >867:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-12 cinit CODE >868:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-13 cinit CODE >869:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-14 cinit CODE >870:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-15 cinit CODE >871:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-16 cinit CODE >872:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-17 cinit CODE >873:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-18 cinit CODE >874:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-19 cinit CODE >875:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-1A cinit CODE >876:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-1B cinit CODE >877:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-1C cinit CODE >878:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-1D cinit CODE >879:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-1E cinit CODE >882:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-1F cinit CODE >883:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-20 cinit CODE >884:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-21 cinit CODE >885:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-22 cinit CODE >886:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-23 cinit CODE >887:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-24 cinit CODE >893:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-24 cinit CODE >895:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
-25 cinit CODE >896:C:\Users\aldoa\AppData\Local\Temp\xcAs98k.s
+F cinit CODE >828:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+F cinit CODE >831:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+F cinit CODE >863:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+10 cinit CODE >866:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+11 cinit CODE >867:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+12 cinit CODE >868:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+13 cinit CODE >869:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+14 cinit CODE >870:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+15 cinit CODE >871:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+16 cinit CODE >872:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+17 cinit CODE >873:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+18 cinit CODE >874:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+19 cinit CODE >875:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+1A cinit CODE >876:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+1B cinit CODE >877:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+1C cinit CODE >878:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+1D cinit CODE >879:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+1E cinit CODE >882:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+1F cinit CODE >883:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+20 cinit CODE >884:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+21 cinit CODE >885:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+22 cinit CODE >886:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+23 cinit CODE >887:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+24 cinit CODE >893:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+24 cinit CODE >895:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
+25 cinit CODE >896:C:\Users\aldoa\AppData\Local\Temp\xcAssuo.s
 4 intentry CODE >59:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
 779 text11 CODE >59:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
 779 text11 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\TSC230.X\main.c
@@ -573,10 +573,10 @@ __Hstrings 0 0 ABS 0 strings -
 _config_TCS230 1F88 0 CODE 0 text10 dist/default/production\TSC230.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production\TSC230.X.production.o
 _TMR1 E 0 ABS 0 - dist/default/production\TSC230.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+___sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 _main 6DA 0 CODE 0 maintext dist/default/production\TSC230.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\TSC230.X.production.o
-start 18 0 CODE 0 init C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+start 18 0 CODE 0 init C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 ___flmul@aexp 3C 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 ___flmul@bexp 3D 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 ___flmul@prod 3E 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
@@ -586,12 +586,12 @@ __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _blue_freq 5B 0 BANK0 1 nvBANK0 dist/default/production\TSC230.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ?_read_green 4C 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\TSC230.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\TSC230.X.production.o
@@ -606,8 +606,8 @@ __Umul8_16 FAC 0 CODE 0 text9 dist/default/production\TSC230.X.production.o
 __end_of___flmul 6DA 0 CODE 0 text8 dist/default/production\TSC230.X.production.o
 __end_of___fltol CA6 0 CODE 0 text7 dist/default/production\TSC230.X.production.o
 __Umul8_16@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/production\TSC230.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
-___stacklo 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+___stackhi 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
+___stacklo 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 read_green@temp_freq 50 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
 _I2C_Slave_Init 1FCC 0 CODE 0 text2 dist/default/production\TSC230.X.production.o
 ___flmul@a 2E 0 BANK0 1 cstackBANK0 dist/default/production\TSC230.X.production.o
@@ -622,7 +622,7 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\TSC230.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\TSC230.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\TSC230.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\TSC230.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+___int_sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -680,7 +680,7 @@ ___xxtofl A42 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
 __end_of_isr FAC 0 CODE 0 text11 dist/default/production\TSC230.X.production.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\aldoa\AppData\Local\Temp\xcAs98k.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\aldoa\AppData\Local\Temp\xcAssuo.o
 __end_of___xxtofl BB6 0 CODE 0 text6 dist/default/production\TSC230.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -

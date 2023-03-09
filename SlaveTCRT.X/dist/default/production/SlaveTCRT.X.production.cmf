@@ -14,18 +14,18 @@
 $dist/default/production\SlaveTCRT.X.production.o
 cinit CODE 0 F F A 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 103 103 19 2 1
-text2 CODE 0 E7 E7 1C 2 1
-text3 CODE 0 8A 8A 5D 2 1
+text1 CODE 0 FC FC 19 2 1
+text2 CODE 0 E0 E0 1C 2 1
+text3 CODE 0 83 83 5D 2 1
 nvCOMMON COMMON 1 79 79 2 1 1
 nvBANK0 BANK0 1 23 23 2 1 1
-maintext CODE 0 19 19 71 2 1
+maintext CODE 0 19 19 6A 2 1
 cstackCOMMON COMMON 1 76 76 3 1 1
 cstackBANK0 BANK0 1 20 20 3 1 1
 intentry CODE 0 4 4 8 2 1
 bssCOMMON COMMON 1 70 70 6 1 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
+$C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
@@ -45,11 +45,11 @@ BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 3-3 2
-CONST 11C-1FFF 2
+CONST 115-1FFF 2
 ENTRY 3-3 2
-ENTRY 11C-1FFF 2
+ENTRY 115-1FFF 2
 CODE 3-3 2
-CODE 11C-1FFF 2
+CODE 115-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
@@ -57,9 +57,9 @@ SFR3 180-18F 1
 COMMON 7B-7D 1
 EEDATA 2100-21FF 2
 STRCODE 3-3 2
-STRCODE 11C-1FFF 2
+STRCODE 115-1FFF 2
 STRING 3-3 2
-STRING 11C-1FFF 2
+STRING 115-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -74,66 +74,66 @@ STRING 11C-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SlaveTCRT.X.production.o
-F cinit CODE >653:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-F cinit CODE >656:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-F cinit CODE >676:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-10 cinit CODE >677:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-11 cinit CODE >678:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-12 cinit CODE >679:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-13 cinit CODE >680:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-14 cinit CODE >681:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-15 cinit CODE >687:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-15 cinit CODE >689:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
-16 cinit CODE >690:C:\Users\aldoa\AppData\Local\Temp\xcAs720.s
+F cinit CODE >653:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+F cinit CODE >656:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+F cinit CODE >676:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+10 cinit CODE >677:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+11 cinit CODE >678:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+12 cinit CODE >679:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+13 cinit CODE >680:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+14 cinit CODE >681:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+15 cinit CODE >687:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+15 cinit CODE >689:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
+16 cinit CODE >690:C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.s
 4 intentry CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-8A text3 CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-8A text3 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-90 text3 CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-91 text3 CODE >56:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-99 text3 CODE >57:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-9B text3 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-9C text3 CODE >59:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-9D text3 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-9E text3 CODE >63:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-A8 text3 CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-AC text3 CODE >67:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-AD text3 CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-AE text3 CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-B4 text3 CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-B8 text3 CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-BD text3 CODE >73:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-C6 text3 CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-CA text3 CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-CD text3 CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-D1 text3 CODE >77:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-D2 text3 CODE >78:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-D7 text3 CODE >79:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-DD text3 CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-DD text3 CODE >82:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-E0 text3 CODE >84:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-E7 text2 CODE >90:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-EA text2 CODE >92:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-EE text2 CODE >93:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-F2 text2 CODE >94:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-F6 text2 CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-F8 text2 CODE >96:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-F9 text2 CODE >97:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-FA text2 CODE >98:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-FB text2 CODE >99:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-FC text2 CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-FF text2 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-102 text2 CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
-103 text1 CODE >132:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-103 text1 CODE >133:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-106 text1 CODE >134:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-107 text1 CODE >135:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-10B text1 CODE >136:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-10C text1 CODE >137:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-10F text1 CODE >138:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-110 text1 CODE >139:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-114 text1 CODE >140:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-115 text1 CODE >141:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-11B text1 CODE >147:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+83 text3 CODE >51:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+83 text3 CODE >52:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+89 text3 CODE >54:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+8A text3 CODE >56:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+92 text3 CODE >57:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+94 text3 CODE >58:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+95 text3 CODE >59:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+96 text3 CODE >60:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+97 text3 CODE >63:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+A1 text3 CODE >65:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+A5 text3 CODE >67:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+A6 text3 CODE >68:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+A7 text3 CODE >69:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+AD text3 CODE >70:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+B1 text3 CODE >71:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+B6 text3 CODE >73:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+BF text3 CODE >74:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+C3 text3 CODE >75:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+C6 text3 CODE >76:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+CA text3 CODE >77:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+CB text3 CODE >78:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+D0 text3 CODE >79:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+D6 text3 CODE >80:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+D6 text3 CODE >82:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+D9 text3 CODE >84:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+E0 text2 CODE >90:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+E3 text2 CODE >92:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+E7 text2 CODE >93:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+EB text2 CODE >94:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+EF text2 CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+F1 text2 CODE >96:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+F2 text2 CODE >97:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+F3 text2 CODE >98:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+F4 text2 CODE >99:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+F5 text2 CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+F8 text2 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+FB text2 CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\configI2C.c
+FC text1 CODE >132:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+FC text1 CODE >133:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+FF text1 CODE >134:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+100 text1 CODE >135:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+104 text1 CODE >136:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+105 text1 CODE >137:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+108 text1 CODE >138:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+109 text1 CODE >139:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+10D text1 CODE >140:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+10E text1 CODE >141:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+114 text1 CODE >147:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
 19 maintext CODE >86:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
 19 maintext CODE >88:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
 1E maintext CODE >89:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
@@ -141,26 +141,19 @@ FF text2 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carri
 2B maintext CODE >95:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
 33 maintext CODE >97:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
 39 maintext CODE >98:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-3D maintext CODE >99:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-3E maintext CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-44 maintext CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-46 maintext CODE >102:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-47 maintext CODE >103:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-4D maintext CODE >104:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-51 maintext CODE >105:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-52 maintext CODE >106:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-58 maintext CODE >107:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-5A maintext CODE >108:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-5B maintext CODE >110:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-61 maintext CODE >111:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-63 maintext CODE >112:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-64 maintext CODE >114:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-6A maintext CODE >115:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-6C maintext CODE >116:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-6D maintext CODE >118:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-79 maintext CODE >119:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-7B maintext CODE >120:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
-7B maintext CODE >124:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+3D maintext CODE >100:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+43 maintext CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+45 maintext CODE >103:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+4B maintext CODE >104:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+4F maintext CODE >106:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+55 maintext CODE >107:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+57 maintext CODE >110:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+5D maintext CODE >111:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+5F maintext CODE >114:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+65 maintext CODE >115:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+67 maintext CODE >118:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+73 maintext CODE >119:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
+74 maintext CODE >124:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\SlaveTCRT.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -175,7 +168,7 @@ FF text2 CODE >101:C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carri
 %SYMTAB
 _z 74 0 COMMON 1 bssCOMMON dist/default/production\SlaveTCRT.X.production.o
 ___latbits 2 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-__Hspace_0 11C 0 ABS 0 - -
+__Hspace_0 115 0 ABS 0 - -
 __Hspace_1 7B 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
@@ -184,19 +177,19 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _BF 4A0 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
+___sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
 _main 32 0 CODE 0 maintext dist/default/production\SlaveTCRT.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-start 18 0 CODE 0 init C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
+start 18 0 CODE 0 init C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
 __LnvCOMMON 0 0 ABS 0 nvCOMMON -
-intlevel0 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
@@ -208,9 +201,9 @@ _ANSELH 189 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _SSPCONbits 14 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 __LnvBANK0 0 0 ABS 0 nvBANK0 -
-___stackhi 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-___stacklo 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
-_I2C_Slave_Init 1CE 0 CODE 0 text2 dist/default/production\SlaveTCRT.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+___stacklo 0 0 ABS 0 - C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
+_I2C_Slave_Init 1C0 0 CODE 0 text2 dist/default/production\SlaveTCRT.X.production.o
 __HnvCOMMON 0 0 ABS 0 nvCOMMON -
 start_initialization 1E 0 CODE 0 cinit dist/default/production\SlaveTCRT.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
@@ -220,13 +213,13 @@ _SSPBUF 13 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
+___int_sp 0 0 STACK 2 stack C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
 __Hcinit 32 0 CODE 0 cinit -
-__end_of_I2C_Slave_Init 206 0 CODE 0 text2 dist/default/production\SlaveTCRT.X.production.o
+__end_of_I2C_Slave_Init 1F8 0 CODE 0 text2 dist/default/production\SlaveTCRT.X.production.o
 __Hidloc 4008 0 IDLOC 5 idloc -
 __Hstack 0 0 STACK 2 stack -
 __Hmaintext 0 0 ABS 0 maintext -
@@ -260,18 +253,18 @@ __pnvBANK0 23 0 BANK0 1 nvBANK0 dist/default/production\SlaveTCRT.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _GIE 5F 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-__S0 11C 0 ABS 0 - -
+__S0 115 0 ABS 0 - -
 __S1 7B 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_isr 114 0 CODE 0 text3 dist/default/production\SlaveTCRT.X.production.o
+_isr 106 0 CODE 0 text3 dist/default/production\SlaveTCRT.X.production.o
 __pnvCOMMON 79 0 COMMON 1 nvCOMMON dist/default/production\SlaveTCRT.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _enviar 75 0 COMMON 1 bssCOMMON dist/default/production\SlaveTCRT.X.production.o
 _estado 72 0 COMMON 1 bssCOMMON dist/default/production\SlaveTCRT.X.production.o
-__end_of_isr 1CE 0 CODE 0 text3 dist/default/production\SlaveTCRT.X.production.o
+__end_of_isr 1C0 0 CODE 0 text3 dist/default/production\SlaveTCRT.X.production.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\aldoa\AppData\Local\Temp\xcAs720.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\aldoa\AppData\Local\Temp\xcAsoh0.o
 _estado2 70 0 COMMON 1 bssCOMMON dist/default/production\SlaveTCRT.X.production.o
 __pmaintext 32 0 CODE 0 maintext dist/default/production\SlaveTCRT.X.production.o
 __Lcommon 0 0 ABS 0 common -
@@ -292,9 +285,9 @@ __Hintentry 18 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 6 0 CODE 0 reset_vec -
 _SSPCON2bits 91 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-__ptext1 206 0 CODE 0 text1 dist/default/production\SlaveTCRT.X.production.o
-__ptext2 1CE 0 CODE 0 text2 dist/default/production\SlaveTCRT.X.production.o
-__ptext3 114 0 CODE 0 text3 dist/default/production\SlaveTCRT.X.production.o
+__ptext1 1F8 0 CODE 0 text1 dist/default/production\SlaveTCRT.X.production.o
+__ptext2 1C0 0 CODE 0 text2 dist/default/production\SlaveTCRT.X.production.o
+__ptext3 106 0 CODE 0 text3 dist/default/production\SlaveTCRT.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -305,7 +298,7 @@ __pcstackCOMMON 76 0 COMMON 1 cstackCOMMON dist/default/production\SlaveTCRT.X.p
 _SSPCON2 91 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _SSPSTAT 94 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 __Hend_init 1E 0 CODE 0 end_init -
-__end_of_main 114 0 CODE 0 maintext dist/default/production\SlaveTCRT.X.production.o
+__end_of_main 106 0 CODE 0 maintext dist/default/production\SlaveTCRT.X.production.o
 _ANSEL 188 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _PORTA 5 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _PORTD 8 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
@@ -313,11 +306,11 @@ _SSPIE 463 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _SSPIF 63 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
-__end_of_setup 238 0 CODE 0 text1 dist/default/production\SlaveTCRT.X.production.o
+__end_of_setup 22A 0 CODE 0 text1 dist/default/production\SlaveTCRT.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\SlaveTCRT.X.production.o
-_setup 206 0 CODE 0 text1 dist/default/production\SlaveTCRT.X.production.o
+_setup 1F8 0 CODE 0 text1 dist/default/production\SlaveTCRT.X.production.o
 _SSPSTATbits 94 0 ABS 0 - dist/default/production\SlaveTCRT.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\SlaveTCRT.X.production.o
 __initialization 1E 0 CODE 0 cinit dist/default/production\SlaveTCRT.X.production.o
@@ -347,7 +340,7 @@ __initialization 1E 0 CODE 0 cinit dist/default/production\SlaveTCRT.X.productio
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cstackBANK0 1 20 20 5 1
-intentry 0 4 8 118 2
+intentry 0 4 8 111 2
 reset_vec 0 0 0 3 2
 bssCOMMON 1 70 70 B 1
 # %NOTES Section

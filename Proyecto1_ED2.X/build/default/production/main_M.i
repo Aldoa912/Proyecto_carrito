@@ -2879,6 +2879,8 @@ void main(void) {
 
     setupMotores();
     setupPWM();
+
+
     CCPR1L = 125;
     CCPR2L = 125;
 
@@ -2901,13 +2903,11 @@ void main(void) {
         I2C_Master_Stop();
         _delay((unsigned long)((200)*(8000000/4000.0)));
 
-        sprintf(distanciaLCD, "Distancia: %.1f cm", distancia);
+        sprintf(distanciaLCD, "Distancia: %.1f", distancia);
 
         Lcd_Set_Cursor_4bits(1,1);
         Lcd_Write_String_4bits(distanciaLCD);
 
-        dis = distancia;
-        linea = 2;
 
         if (color == 0){
             Lcd_Set_Cursor_4bits(2,1);
@@ -2927,6 +2927,7 @@ void main(void) {
 
             CCPR1L = 125;
             CCPR2L = 125;
+            Lcd_Clear_4bits();
             Lcd_Set_Cursor_4bits(2,1);
             Lcd_Write_String_4bits("AZUL");
 
@@ -2936,54 +2937,60 @@ void main(void) {
 
             CCPR1L = 187;
             CCPR2L = 187;
+            Lcd_Clear_4bits();
             Lcd_Set_Cursor_4bits(2,1);
             Lcd_Write_String_4bits("ROJO");
 
         }
 
-        else if (distancia < 5){
+        if (distancia < 5){
 
-            PORTDbits.RD0 = 0;
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 0;
-            PORTDbits.RD3 = 0;
+            PORTAbits.RA0 = 0;
+            PORTAbits.RA1 = 0;
+            PORTAbits.RA2 = 0;
+            PORTAbits.RA3 = 0;
+            Lcd_Set_Cursor_4bits(2,7);
+            Lcd_Write_String_4bits("TAPADO");
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("N");
 
         }
 
-        else if (linea == 0){
+        if (distancia > 5){
 
-            PORTDbits.RD0 = 1;
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 1;
-            PORTDbits.RD3 = 0;
+            PORTAbits.RA0 = 0;
+            PORTAbits.RA1 = 1;
+            PORTAbits.RA2 = 1;
+            PORTAbits.RA3 = 0;
             Lcd_Set_Cursor_4bits(2,7);
             Lcd_Write_String_4bits("LIBRE");
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("N");
         }
 
-        else if (linea == 1){
+        if (linea == 1){
 
-            PORTDbits.RD0 = 1;
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 0;
-            PORTDbits.RD3 = 0;
-            Lcd_Set_Cursor_4bits(2,7);
-            Lcd_Write_String_4bits("LINEA");
-
-        }
-
-        else if (linea == 2){
-
-            PORTDbits.RD0 = 0;
-            PORTDbits.RD1 = 0;
-            PORTDbits.RD2 = 1;
-            PORTDbits.RD3 = 0;
-            Lcd_Set_Cursor_4bits(2,7);
-            Lcd_Write_String_4bits("LINEA");
+            PORTAbits.RA0 = 0;
+            PORTAbits.RA1 = 1;
+            PORTAbits.RA2 = 0;
+            PORTAbits.RA3 = 0;
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("!");
 
         }
 
-        _delay((unsigned long)((50)*(8000000/4000.0)));
+        if (linea == 2){
 
+            PORTAbits.RA0 = 0;
+            PORTAbits.RA1 = 0;
+            PORTAbits.RA2 = 1;
+            PORTAbits.RA3 = 0;
+            Lcd_Set_Cursor_4bits(2,16);
+            Lcd_Write_String_4bits("!");
+
+        }
+
+        _delay((unsigned long)((10)*(8000000/4000.0)));
 
 
 
@@ -3002,7 +3009,7 @@ void setup (void){
     ANSELH = 0;
 
     TRISA = 0;
-    TRISB = 0b00000010;
+    TRISB = 0b00000000;
     TRISD = 0;
 
 

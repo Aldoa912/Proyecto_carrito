@@ -13,7 +13,7 @@ FOSC_500KHZ 3
 FOSC_250KHZ 2
 FOSC_125KHZ 1
 ]
-"214 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
+"221 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [e E1349 . `uc
 FOSC_8MHZ 7
 FOSC_4MHZ 6
@@ -105,7 +105,7 @@ FOSC_125KHZ 1
 [v _tmr1_init tmr1_init `(v  1 e 1 0 ]
 "69 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [v _main main `(v  1 e 1 0 ]
-"194
+"201
 [v _setup setup `(v  1 e 1 0 ]
 "15 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\motorDC.c
 [v _setupMotores setupMotores `(v  1 e 1 0 ]
@@ -113,7 +113,7 @@ FOSC_125KHZ 1
 [v _setupPWM setupPWM `(v  1 e 1 0 ]
 "167 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
-[s S358 . 1 `uc 1 RA0 1 0 :1:0 
+[s S234 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -123,8 +123,8 @@ FOSC_125KHZ 1
 `uc 1 RA7 1 0 :1:7 
 ]
 "184
-[u S367 . 1 `S358 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES367  1 e 1 @5 ]
+[u S243 . 1 `S234 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES243  1 e 1 @5 ]
 "229
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "353
@@ -141,7 +141,7 @@ FOSC_125KHZ 1
 "370
 [u S155 . 1 `S146 1 . 1 0 ]
 [v _PORTDbits PORTDbits `VES155  1 e 1 @8 ]
-[s S562 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S565 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -150,11 +150,11 @@ FOSC_125KHZ 1
 `uc 1 ADIF 1 0 :1:6 
 ]
 "554
-[u S570 . 1 `S562 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES570  1 e 1 @12 ]
+[u S573 . 1 `S565 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES573  1 e 1 @12 ]
 "651
 [v _TMR1 TMR1 `VEus  1 e 2 @14 ]
-[s S294 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S314 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
@@ -163,7 +163,7 @@ FOSC_125KHZ 1
 `uc 1 T1GINV 1 0 :1:7 
 ]
 "701
-[s S302 . 1 `uc 1 . 1 0 :2:0 
+[s S322 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1INSYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T1CKPS0 1 0 :1:4 
@@ -171,17 +171,17 @@ FOSC_125KHZ 1
 `uc 1 . 1 0 :1:6 
 `uc 1 T1GIV 1 0 :1:7 
 ]
-[s S310 . 1 `uc 1 . 1 0 :2:0 
+[s S330 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1SYNC 1 0 :1:2 
 ]
-[u S313 . 1 `S294 1 . 1 0 `S302 1 . 1 0 `S310 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES313  1 e 1 @16 ]
-[s S581 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[u S333 . 1 `S314 1 . 1 0 `S322 1 . 1 0 `S330 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES333  1 e 1 @16 ]
+[s S584 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
 "794
-[s S585 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S588 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 TOUTPS0 1 0 :1:3 
@@ -189,20 +189,20 @@ FOSC_125KHZ 1
 `uc 1 TOUTPS2 1 0 :1:5 
 `uc 1 TOUTPS3 1 0 :1:6 
 ]
-[u S593 . 1 `S581 1 . 1 0 `S585 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES593  1 e 1 @18 ]
+[u S596 . 1 `S584 1 . 1 0 `S588 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES596  1 e 1 @18 ]
 "844
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
 "851
 [v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
 "928
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
-[s S495 . 1 `uc 1 CCP1M 1 0 :4:0 
+[s S498 . 1 `uc 1 CCP1M 1 0 :4:0 
 `uc 1 DC1B 1 0 :2:4 
 `uc 1 P1M 1 0 :2:6 
 ]
 "969
-[s S499 . 1 `uc 1 CCP1M0 1 0 :1:0 
+[s S502 . 1 `uc 1 CCP1M0 1 0 :1:0 
 `uc 1 CCP1M1 1 0 :1:1 
 `uc 1 CCP1M2 1 0 :1:2 
 `uc 1 CCP1M3 1 0 :1:3 
@@ -211,29 +211,29 @@ FOSC_125KHZ 1
 `uc 1 P1M0 1 0 :1:6 
 `uc 1 P1M1 1 0 :1:7 
 ]
-[s S508 . 1 `uc 1 . 1 0 :4:0 
+[s S511 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 CCP1Y 1 0 :1:4 
 `uc 1 CCP1X 1 0 :1:5 
 ]
-[u S512 . 1 `S495 1 . 1 0 `S499 1 . 1 0 `S508 1 . 1 0 ]
-[v _CCP1CONbits CCP1CONbits `VES512  1 e 1 @23 ]
+[u S515 . 1 `S498 1 . 1 0 `S502 1 . 1 0 `S511 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES515  1 e 1 @23 ]
 "1155
 [v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
-[s S534 . 1 `uc 1 CCP2M 1 0 :4:0 
+[s S537 . 1 `uc 1 CCP2M 1 0 :4:0 
 `uc 1 DC2B0 1 0 :1:4 
 `uc 1 DC2B1 1 0 :1:5 
 ]
 "1189
-[s S538 . 1 `uc 1 CCP2M0 1 0 :1:0 
+[s S541 . 1 `uc 1 CCP2M0 1 0 :1:0 
 `uc 1 CCP2M1 1 0 :1:1 
 `uc 1 CCP2M2 1 0 :1:2 
 `uc 1 CCP2M3 1 0 :1:3 
 `uc 1 CCP2Y 1 0 :1:4 
 `uc 1 CCP2X 1 0 :1:5 
 ]
-[u S545 . 1 `S534 1 . 1 0 `S538 1 . 1 0 ]
-[v _CCP2CONbits CCP2CONbits `VES545  1 e 1 @29 ]
-[s S415 . 1 `uc 1 PS 1 0 :3:0 
+[u S548 . 1 `S537 1 . 1 0 `S541 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES548  1 e 1 @29 ]
+[s S418 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -241,15 +241,15 @@ FOSC_125KHZ 1
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "1367
-[s S422 . 1 `uc 1 PS0 1 0 :1:0 
+[s S425 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S426 . 1 `S415 1 . 1 0 `S422 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES426  1 e 1 @129 ]
+[u S429 . 1 `S418 1 . 1 0 `S425 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES429  1 e 1 @129 ]
 "1417
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
-[s S337 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S357 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -259,8 +259,8 @@ FOSC_125KHZ 1
 `uc 1 TRISA7 1 0 :1:7 
 ]
 "1434
-[u S346 . 1 `S337 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES346  1 e 1 @133 ]
+[u S366 . 1 `S357 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES366  1 e 1 @133 ]
 "1479
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
 [s S26 . 1 `uc 1 TRISC0 1 0 :1:0 
@@ -311,10 +311,10 @@ FOSC_125KHZ 1
 [v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
 "2178
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
-[s S441 . 1 `uc 1 WPUB 1 0 :8:0 
+[s S444 . 1 `uc 1 WPUB 1 0 :8:0 
 ]
 "2367
-[s S443 . 1 `uc 1 WPUB0 1 0 :1:0 
+[s S446 . 1 `uc 1 WPUB0 1 0 :1:0 
 `uc 1 WPUB1 1 0 :1:1 
 `uc 1 WPUB2 1 0 :1:2 
 `uc 1 WPUB3 1 0 :1:3 
@@ -323,8 +323,8 @@ FOSC_125KHZ 1
 `uc 1 WPUB6 1 0 :1:6 
 `uc 1 WPUB7 1 0 :1:7 
 ]
-[u S452 . 1 `S441 1 . 1 0 `S443 1 . 1 0 ]
-[v _WPUBbits WPUBbits `VES452  1 e 1 @149 ]
+[u S455 . 1 `S444 1 . 1 0 `S446 1 . 1 0 ]
+[v _WPUBbits WPUBbits `VES455  1 e 1 @149 ]
 "2417
 [v _IOCB IOCB `VEuc  1 e 1 @150 ]
 "3388
@@ -351,8 +351,6 @@ FOSC_125KHZ 1
 [v __npowers_ _npowers_ `DC[13]d  1 e 52 0 ]
 "62 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [v _distancia distancia `f  1 e 4 0 ]
-"63
-[v _dis dis `uc  1 e 1 0 ]
 "64
 [v _color color `uc  1 e 1 0 ]
 "65
@@ -362,7 +360,7 @@ FOSC_125KHZ 1
 "69
 [v _main main `(v  1 e 1 0 ]
 {
-"188
+"195
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -370,9 +368,9 @@ FOSC_125KHZ 1
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
 "533
 [v sprintf@fval fval `d  1 a 4 30 ]
-[u S805 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+[u S808 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
 "543
-[v sprintf@tmpval tmpval `S805  1 a 4 23 ]
+[v sprintf@tmpval tmpval `S808  1 a 4 23 ]
 "545
 [v sprintf@val val `ul  1 a 4 17 ]
 "517
@@ -468,17 +466,17 @@ FOSC_125KHZ 1
 "8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1003 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1006 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1008 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S1011 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1003 1 fAsBytes 4 0 `S1008 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1011  1 a 4 24 ]
+[s S1011 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S1014 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1006 1 fAsBytes 4 0 `S1011 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1014  1 a 4 24 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 18 ]
-[s S1080 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1083 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1083 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1080 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1083  1 a 2 28 ]
+[u S1086 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1083 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1086  1 a 2 28 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 23 ]
 "11
@@ -628,10 +626,10 @@ FOSC_125KHZ 1
 {
 "40
 } 0
-"194 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
+"201 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"221
+"228
 } 0
 "11 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\configINTOSC.c
 [v _setupINTOSC setupINTOSC `(v  1 e 1 0 ]

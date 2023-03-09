@@ -97,25 +97,25 @@ void main(void) {
     if (lectura1 == 0){
         estado = 1;
     }
-    else if (lectura1 == 1) {
+    if (lectura1 == 1) {
         estado = 0;
     }    
-    else if (lectura2 == 0){
+    if (lectura2 == 0){
         estado2 = 1;
     }
-    else if (lectura2 == 1) {
+    if (lectura2 == 1) {
         estado2 = 0;
     }    
     
-    else if (estado == 1){
+    if (estado == 1){
         enviar = 1;
     }
     
-    else if (estado2 == 1){
+    if (estado2 == 1){
         enviar = 2;
     }
     
-    else if (estado == 0 && estado2 == 0){
+    if (estado == 0 && estado2 == 0){
         enviar = 0;
     }
 

@@ -539,11 +539,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "99
 [; ;main.c: 99:     }
 }
-[e $U 156  ]
-"100
-[; ;main.c: 100:     else if (lectura1 == 1) {
 [e :U 155 ]
-[e $ ! == _lectura1 -> 1 `i 157  ]
+"100
+[; ;main.c: 100:     if (lectura1 == 1) {
+[e $ ! == _lectura1 -> 1 `i 156  ]
 {
 "101
 [; ;main.c: 101:         estado = 0;
@@ -551,11 +550,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "102
 [; ;main.c: 102:     }
 }
-[e $U 158  ]
+[e :U 156 ]
 "103
-[; ;main.c: 103:     else if (lectura2 == 0){
-[e :U 157 ]
-[e $ ! == _lectura2 -> 0 `i 159  ]
+[; ;main.c: 103:     if (lectura2 == 0){
+[e $ ! == _lectura2 -> 0 `i 157  ]
 {
 "104
 [; ;main.c: 104:         estado2 = 1;
@@ -563,11 +561,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "105
 [; ;main.c: 105:     }
 }
-[e $U 160  ]
+[e :U 157 ]
 "106
-[; ;main.c: 106:     else if (lectura2 == 1) {
-[e :U 159 ]
-[e $ ! == _lectura2 -> 1 `i 161  ]
+[; ;main.c: 106:     if (lectura2 == 1) {
+[e $ ! == _lectura2 -> 1 `i 158  ]
 {
 "107
 [; ;main.c: 107:         estado2 = 0;
@@ -575,11 +572,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "108
 [; ;main.c: 108:     }
 }
-[e $U 162  ]
+[e :U 158 ]
 "110
-[; ;main.c: 110:     else if (estado == 1){
-[e :U 161 ]
-[e $ ! == _estado -> 1 `i 163  ]
+[; ;main.c: 110:     if (estado == 1){
+[e $ ! == _estado -> 1 `i 159  ]
 {
 "111
 [; ;main.c: 111:         enviar = 1;
@@ -587,11 +583,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "112
 [; ;main.c: 112:     }
 }
-[e $U 164  ]
+[e :U 159 ]
 "114
-[; ;main.c: 114:     else if (estado2 == 1){
-[e :U 163 ]
-[e $ ! == _estado2 -> 1 `i 165  ]
+[; ;main.c: 114:     if (estado2 == 1){
+[e $ ! == _estado2 -> 1 `i 160  ]
 {
 "115
 [; ;main.c: 115:         enviar = 2;
@@ -599,11 +594,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "116
 [; ;main.c: 116:     }
 }
-[e $U 166  ]
+[e :U 160 ]
 "118
-[; ;main.c: 118:     else if (estado == 0 && estado2 == 0){
-[e :U 165 ]
-[e $ ! && == _estado -> 0 `i == _estado2 -> 0 `i 167  ]
+[; ;main.c: 118:     if (estado == 0 && estado2 == 0){
+[e $ ! && == _estado -> 0 `i == _estado2 -> 0 `i 161  ]
 {
 "119
 [; ;main.c: 119:         enviar = 0;
@@ -611,13 +605,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "120
 [; ;main.c: 120:     }
 }
-[e :U 167 ]
-[e :U 166 ]
-[e :U 164 ]
-[e :U 162 ]
-[e :U 160 ]
-[e :U 158 ]
-[e :U 156 ]
+[e :U 161 ]
 "124
 [; ;main.c: 124:     _delay((unsigned long)((10)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
@@ -669,5 +657,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _I2C_Slave_Init (1 -> -> 32 `i `uc ]
 "147
 [; ;main.c: 147: }
-[e :UE 168 ]
+[e :UE 162 ]
 }
