@@ -99,25 +99,26 @@ void main(void) {
 
     while(1)
     {   
+        // se leen las frecuencias de cada uno de los colores
+        red_freq = read_red();
+        green_freq = read_green();
+        blue_freq = read_blue();
         
-    red_freq = read_red();
-    green_freq = read_green();
-    blue_freq = read_blue();
-    
-    if (red_freq < 185 && red_freq > 170 && green_freq < 220 && green_freq > 210 && blue_freq < 70 && blue_freq > 60){
-        estado = 1;
-    }
-    
-    else if (red_freq < 195 && red_freq > 180 && green_freq < 235 && green_freq > 220 && blue_freq < 68 && blue_freq > 50){
-        estado = 2;
-    }
-//    
-    else if (red_freq < 130 && red_freq > 115 && green_freq < 260 && green_freq > 240 && blue_freq < 68 && blue_freq > 50){
-        estado = 3;
-    }
-    
-    else {
-        estado = 0;
+        // se comparan las frecuencias para decir si el color detectado es verde
+        if (red_freq < 185 && red_freq > 170 && green_freq < 220 && green_freq > 210 && blue_freq < 70 && blue_freq > 60){
+            estado = 1;
+        }
+        // se comparan las frecuencias para decir si el color detectado es azul
+        else if (red_freq < 195 && red_freq > 180 && green_freq < 235 && green_freq > 220 && blue_freq < 68 && blue_freq > 50){
+            estado = 2;
+        }
+        // se comparan las frecuencias para decir si el color detectado es azul  
+        else if (red_freq < 130 && red_freq > 115 && green_freq < 260 && green_freq > 240 && blue_freq < 68 && blue_freq > 50){
+            estado = 3;
+        }
+        // si no es ninguno de esos colores, envia 0
+        else {
+            estado = 0;
     }
     
     

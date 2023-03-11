@@ -84,40 +84,47 @@ void __interrupt() isr(void){
 }
 
 void main(void) {
-  
+    // se iinician los puertos y el oscilador
     setup();
     TRISD = 0x00;
     
     while(1)
     {   
-       
-    lectura1 = PORTAbits.RA0;
-    lectura2 = PORTAbits.RA1;
     
-    if (lectura1 == 0){
-        estado = 1;
-    }
-    if (lectura1 == 1) {
-        estado = 0;
-    }    
-    if (lectura2 == 0){
-        estado2 = 1;
-    }
-    if (lectura2 == 1) {
-        estado2 = 0;
-    }    
+        // se copia el valor de los pines a una variable
+        lectura1 = PORTAbits.RA0;
+        lectura2 = PORTAbits.RA1;
     
-    if (estado == 1){
-        enviar = 1;
-    }
-    
-    if (estado2 == 1){
-        enviar = 2;
-    }
-    
-    if (estado == 0 && estado2 == 0){
-        enviar = 0;
-    }
+        
+        // Si el sensor 1 detecta negro, estado es igual a 1
+        if (lectura1 == 0){
+            estado = 1;
+        }
+        // Si el sensor no detecta negro, estado2 es igual a 1
+        if (lectura1 == 1) {
+            estado = 0;
+        }    
+        // Si el sensor 2 detecta negro, estado2 es igual a 1
+        if (lectura2 == 0){
+            estado2 = 1;
+        }
+        // Si el sensor 2 no detecta negro, estado2 es igual a 1
+        if (lectura2 == 1) {
+            estado2 = 0;
+        }    
+        
+        //si solo el sensor 1 detecta negro, envia 1
+        if (estado == 1){
+            enviar = 1;
+        }
+        // si solo el sensor 2 detecta negro, envia 2
+        if (estado2 == 1){
+            enviar = 2;
+        }
+        // si ninguno detecta negro, envia 0
+        if (estado == 0 && estado2 == 0){
+            enviar = 0;
+        }
 
     
     

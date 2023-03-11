@@ -101,8 +101,8 @@ void main(void) {
     while(1)
     {   
         
-        distancia = medir_distancia();
-        PORTB = distancia;
+        distancia = medir_distancia(); //se mide la distancia
+        PORTB = distancia;      // se copia el valor de la distancia a el puerto B
         
     }
     return;
