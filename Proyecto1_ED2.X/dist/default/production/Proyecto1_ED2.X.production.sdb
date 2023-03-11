@@ -13,7 +13,7 @@ FOSC_500KHZ 3
 FOSC_250KHZ 2
 FOSC_125KHZ 1
 ]
-"221 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
+"233 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [e E1349 . `uc
 FOSC_8MHZ 7
 FOSC_4MHZ 6
@@ -105,7 +105,7 @@ FOSC_125KHZ 1
 [v _tmr1_init tmr1_init `(v  1 e 1 0 ]
 "69 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [v _main main `(v  1 e 1 0 ]
-"201
+"213
 [v _setup setup `(v  1 e 1 0 ]
 "15 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\motorDC.c
 [v _setupMotores setupMotores `(v  1 e 1 0 ]
@@ -360,7 +360,7 @@ FOSC_125KHZ 1
 "69
 [v _main main `(v  1 e 1 0 ]
 {
-"195
+"207
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -626,10 +626,10 @@ FOSC_125KHZ 1
 {
 "40
 } 0
-"201 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
+"213 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\main_M.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"228
+"240
 } 0
 "11 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\configINTOSC.c
 [v _setupINTOSC setupINTOSC `(v  1 e 1 0 ]
@@ -724,7 +724,7 @@ FOSC_125KHZ 1
 "62 C:\Users\aldoa\Desktop\QuintoSemestre\Digital2\Proyecto_carrito\Proyecto1_ED2.X\configI2C.c
 [v _I2C_Master_Write I2C_Master_Write `(v  1 e 1 0 ]
 {
-[v I2C_Master_Write@d d `ui  1 p 2 0 ]
+[v I2C_Master_Write@d d `ui  1 p 2 59 ]
 "66
 } 0
 "52

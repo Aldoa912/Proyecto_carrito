@@ -80,8 +80,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "27 ./configI2C.h
 [; ;./configI2C.h: 27: void I2C_Master_Init(const unsigned long c);
 [v _I2C_Master_Init `(v ~T0 @X0 0 ef1`Cul ]
-"221 main_M.c
-[; ;main_M.c: 221:     setupINTOSC(FOSC_8MHZ);
+"233 main_M.c
+[; ;main_M.c: 233:     setupINTOSC(FOSC_8MHZ);
 [c E1349 7 6 5 4 3 2 1 .. ]
 [n E1349 . FOSC_8MHZ FOSC_4MHZ FOSC_2MHZ FOSC_1MH FOSC_500KHZ FOSC_250KHZ FOSC_125KHZ  ]
 "25 ./configINTOSC.h
@@ -410,8 +410,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_M.c: 88:         I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
 "89
-[; ;main_M.c: 89:         _delay((unsigned long)((200)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main_M.c: 89:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "90
 [; ;main_M.c: 90:         I2C_Master_Start();
 [e ( _I2C_Master_Start ..  ]
@@ -425,8 +425,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_M.c: 93:         I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
 "94
-[; ;main_M.c: 94:         _delay((unsigned long)((200)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main_M.c: 94:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "95
 [; ;main_M.c: 95:         I2C_Master_Start();
 [e ( _I2C_Master_Start ..  ]
@@ -440,170 +440,159 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_M.c: 98:         I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
 "99
-[; ;main_M.c: 99:         _delay((unsigned long)((200)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"101
-[; ;main_M.c: 101:         sprintf(distanciaLCD, "Distancia: %.1f", distancia);
-[e ( _sprintf (1 , (. , &U _distanciaLCD :s 1C -> _distancia `d ]
+[; ;main_M.c: 99:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "103
-[; ;main_M.c: 103:         Lcd_Set_Cursor_4bits(1,1);
-[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main_M.c: 103:         I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
 "104
-[; ;main_M.c: 104:         Lcd_Write_String_4bits(distanciaLCD);
-[e ( _Lcd_Write_String_4bits (1 &U _distanciaLCD ]
+[; ;main_M.c: 104:         I2C_Master_Write(0x90);
+[e ( _I2C_Master_Write (1 -> -> 144 `i `ui ]
+"105
+[; ;main_M.c: 105:         I2C_Master_Write(color);
+[e ( _I2C_Master_Write (1 -> _color `ui ]
+"106
+[; ;main_M.c: 106:         I2C_Master_Write(distancia);
+[e ( _I2C_Master_Write (1 -> _distancia `ui ]
 "107
-[; ;main_M.c: 107:         if (color == 0){
+[; ;main_M.c: 107:         I2C_Master_Write(linea);
+[e ( _I2C_Master_Write (1 -> _linea `ui ]
+"108
+[; ;main_M.c: 108:         I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"109
+[; ;main_M.c: 109:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"113
+[; ;main_M.c: 113:         sprintf(distanciaLCD, "Distancia: %.1f", distancia);
+[e ( _sprintf (1 , (. , &U _distanciaLCD :s 1C -> _distancia `d ]
+"115
+[; ;main_M.c: 115:         Lcd_Set_Cursor_4bits(1,1);
+[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"116
+[; ;main_M.c: 116:         Lcd_Write_String_4bits(distanciaLCD);
+[e ( _Lcd_Write_String_4bits (1 &U _distanciaLCD ]
+"119
+[; ;main_M.c: 119:         if (color == 0){
 [e $ ! == -> _color `i -> 0 `i 143  ]
 {
-"108
-[; ;main_M.c: 108:             Lcd_Set_Cursor_4bits(2,1);
+"120
+[; ;main_M.c: 120:             Lcd_Set_Cursor_4bits(2,1);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"109
-[; ;main_M.c: 109:             Lcd_Write_String_4bits("NADA");
+"121
+[; ;main_M.c: 121:             Lcd_Write_String_4bits("NADA");
 [e ( _Lcd_Write_String_4bits (1 :s 2C ]
-"111
-[; ;main_M.c: 111:         }
+"123
+[; ;main_M.c: 123:         }
 }
 [e $U 144  ]
-"113
-[; ;main_M.c: 113:         else if (color == 1){
+"125
+[; ;main_M.c: 125:         else if (color == 1){
 [e :U 143 ]
 [e $ ! == -> _color `i -> 1 `i 145  ]
 {
-"115
-[; ;main_M.c: 115:             CCPR1L = 62;
+"127
+[; ;main_M.c: 127:             CCPR1L = 62;
 [e = _CCPR1L -> -> 62 `i `uc ]
-"116
-[; ;main_M.c: 116:             CCPR2L = 62;
+"128
+[; ;main_M.c: 128:             CCPR2L = 62;
 [e = _CCPR2L -> -> 62 `i `uc ]
-"117
-[; ;main_M.c: 117:             Lcd_Set_Cursor_4bits(2,1);
+"129
+[; ;main_M.c: 129:             Lcd_Set_Cursor_4bits(2,1);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"118
-[; ;main_M.c: 118:             Lcd_Write_String_4bits("VERDE");
+"130
+[; ;main_M.c: 130:             Lcd_Write_String_4bits("VERDE");
 [e ( _Lcd_Write_String_4bits (1 :s 3C ]
-"119
-[; ;main_M.c: 119:         }
+"131
+[; ;main_M.c: 131:         }
 }
 [e $U 146  ]
-"121
-[; ;main_M.c: 121:         else if (color == 2){
+"133
+[; ;main_M.c: 133:         else if (color == 2){
 [e :U 145 ]
 [e $ ! == -> _color `i -> 2 `i 147  ]
 {
-"123
-[; ;main_M.c: 123:             CCPR1L = 125;
+"135
+[; ;main_M.c: 135:             CCPR1L = 125;
 [e = _CCPR1L -> -> 125 `i `uc ]
-"124
-[; ;main_M.c: 124:             CCPR2L = 125;
+"136
+[; ;main_M.c: 136:             CCPR2L = 125;
 [e = _CCPR2L -> -> 125 `i `uc ]
-"125
-[; ;main_M.c: 125:             Lcd_Clear_4bits();
+"137
+[; ;main_M.c: 137:             Lcd_Clear_4bits();
 [e ( _Lcd_Clear_4bits ..  ]
-"126
-[; ;main_M.c: 126:             Lcd_Set_Cursor_4bits(2,1);
+"138
+[; ;main_M.c: 138:             Lcd_Set_Cursor_4bits(2,1);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"127
-[; ;main_M.c: 127:             Lcd_Write_String_4bits("AZUL");
+"139
+[; ;main_M.c: 139:             Lcd_Write_String_4bits("AZUL");
 [e ( _Lcd_Write_String_4bits (1 :s 4C ]
-"129
-[; ;main_M.c: 129:         }
+"141
+[; ;main_M.c: 141:         }
 }
 [e $U 148  ]
-"131
-[; ;main_M.c: 131:         else if (color == 3){
+"143
+[; ;main_M.c: 143:         else if (color == 3){
 [e :U 147 ]
 [e $ ! == -> _color `i -> 3 `i 149  ]
 {
-"133
-[; ;main_M.c: 133:             CCPR1L = 187;
+"145
+[; ;main_M.c: 145:             CCPR1L = 187;
 [e = _CCPR1L -> -> 187 `i `uc ]
-"134
-[; ;main_M.c: 134:             CCPR2L = 187;
+"146
+[; ;main_M.c: 146:             CCPR2L = 187;
 [e = _CCPR2L -> -> 187 `i `uc ]
-"135
-[; ;main_M.c: 135:             Lcd_Clear_4bits();
+"147
+[; ;main_M.c: 147:             Lcd_Clear_4bits();
 [e ( _Lcd_Clear_4bits ..  ]
-"136
-[; ;main_M.c: 136:             Lcd_Set_Cursor_4bits(2,1);
+"148
+[; ;main_M.c: 148:             Lcd_Set_Cursor_4bits(2,1);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"137
-[; ;main_M.c: 137:             Lcd_Write_String_4bits("ROJO");
+"149
+[; ;main_M.c: 149:             Lcd_Write_String_4bits("ROJO");
 [e ( _Lcd_Write_String_4bits (1 :s 5C ]
-"139
-[; ;main_M.c: 139:         }
+"151
+[; ;main_M.c: 151:         }
 }
 [e :U 149 ]
 [e :U 148 ]
 [e :U 146 ]
 [e :U 144 ]
-"141
-[; ;main_M.c: 141:         if (distancia < 5){
+"153
+[; ;main_M.c: 153:         if (distancia < 5){
 [e $ ! < _distancia -> -> 5 `i `f 150  ]
 {
-"143
-[; ;main_M.c: 143:             PORTAbits.RA0 = 0;
+"155
+[; ;main_M.c: 155:             PORTAbits.RA0 = 0;
 [e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
-"144
-[; ;main_M.c: 144:             PORTAbits.RA1 = 0;
-[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
-"145
-[; ;main_M.c: 145:             PORTAbits.RA2 = 0;
-[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
-"146
-[; ;main_M.c: 146:             PORTAbits.RA3 = 0;
-[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
-"147
-[; ;main_M.c: 147:             Lcd_Set_Cursor_4bits(2,7);
-[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
-"148
-[; ;main_M.c: 148:             Lcd_Write_String_4bits("TAPADO");
-[e ( _Lcd_Write_String_4bits (1 :s 6C ]
-"149
-[; ;main_M.c: 149:             Lcd_Set_Cursor_4bits(2,16);
-[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 16 `i `uc ]
-"150
-[; ;main_M.c: 150:             Lcd_Write_String_4bits("N");
-[e ( _Lcd_Write_String_4bits (1 :s 7C ]
-"152
-[; ;main_M.c: 152:         }
-}
-[e :U 150 ]
-"154
-[; ;main_M.c: 154:         if (distancia > 5){
-[e $ ! > _distancia -> -> 5 `i `f 151  ]
-{
 "156
-[; ;main_M.c: 156:             PORTAbits.RA0 = 0;
-[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+[; ;main_M.c: 156:             PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
 "157
-[; ;main_M.c: 157:             PORTAbits.RA1 = 1;
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+[; ;main_M.c: 157:             PORTAbits.RA2 = 0;
+[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
 "158
-[; ;main_M.c: 158:             PORTAbits.RA2 = 1;
-[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
-"159
-[; ;main_M.c: 159:             PORTAbits.RA3 = 0;
+[; ;main_M.c: 158:             PORTAbits.RA3 = 0;
 [e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
-"160
-[; ;main_M.c: 160:             Lcd_Set_Cursor_4bits(2,7);
+"159
+[; ;main_M.c: 159:             Lcd_Set_Cursor_4bits(2,7);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
+"160
+[; ;main_M.c: 160:             Lcd_Write_String_4bits("TAPADO");
+[e ( _Lcd_Write_String_4bits (1 :s 6C ]
 "161
-[; ;main_M.c: 161:             Lcd_Write_String_4bits("LIBRE");
-[e ( _Lcd_Write_String_4bits (1 :s 8C ]
-"162
-[; ;main_M.c: 162:             Lcd_Set_Cursor_4bits(2,16);
+[; ;main_M.c: 161:             Lcd_Set_Cursor_4bits(2,16);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 16 `i `uc ]
-"163
-[; ;main_M.c: 163:             Lcd_Write_String_4bits("N");
-[e ( _Lcd_Write_String_4bits (1 :s 9C ]
+"162
+[; ;main_M.c: 162:             Lcd_Write_String_4bits("N");
+[e ( _Lcd_Write_String_4bits (1 :s 7C ]
 "164
 [; ;main_M.c: 164:         }
 }
-[e :U 151 ]
+[e :U 150 ]
 "166
-[; ;main_M.c: 166:         if (linea == 1){
-[e $ ! == -> _linea `i -> 1 `i 152  ]
+[; ;main_M.c: 166:         if (distancia > 5){
+[e $ ! > _distancia -> -> 5 `i `f 151  ]
 {
 "168
 [; ;main_M.c: 168:             PORTAbits.RA0 = 0;
@@ -612,104 +601,136 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main_M.c: 169:             PORTAbits.RA1 = 1;
 [e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
 "170
-[; ;main_M.c: 170:             PORTAbits.RA2 = 0;
-[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
+[; ;main_M.c: 170:             PORTAbits.RA2 = 1;
+[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
 "171
 [; ;main_M.c: 171:             PORTAbits.RA3 = 0;
 [e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
 "172
-[; ;main_M.c: 172:             Lcd_Set_Cursor_4bits(2,16);
-[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 16 `i `uc ]
+[; ;main_M.c: 172:             Lcd_Set_Cursor_4bits(2,7);
+[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
 "173
-[; ;main_M.c: 173:             Lcd_Write_String_4bits("!");
-[e ( _Lcd_Write_String_4bits (1 :s 10C ]
+[; ;main_M.c: 173:             Lcd_Write_String_4bits("LIBRE");
+[e ( _Lcd_Write_String_4bits (1 :s 8C ]
+"174
+[; ;main_M.c: 174:             Lcd_Set_Cursor_4bits(2,16);
+[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 16 `i `uc ]
 "175
-[; ;main_M.c: 175:         }
+[; ;main_M.c: 175:             Lcd_Write_String_4bits("N");
+[e ( _Lcd_Write_String_4bits (1 :s 9C ]
+"176
+[; ;main_M.c: 176:         }
+}
+[e :U 151 ]
+"178
+[; ;main_M.c: 178:         if (linea == 1){
+[e $ ! == -> _linea `i -> 1 `i 152  ]
+{
+"180
+[; ;main_M.c: 180:             PORTAbits.RA0 = 0;
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"181
+[; ;main_M.c: 181:             PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"182
+[; ;main_M.c: 182:             PORTAbits.RA2 = 0;
+[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
+"183
+[; ;main_M.c: 183:             PORTAbits.RA3 = 0;
+[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"184
+[; ;main_M.c: 184:             Lcd_Set_Cursor_4bits(2,16);
+[e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 16 `i `uc ]
+"185
+[; ;main_M.c: 185:             Lcd_Write_String_4bits("!");
+[e ( _Lcd_Write_String_4bits (1 :s 10C ]
+"187
+[; ;main_M.c: 187:         }
 }
 [e :U 152 ]
-"177
-[; ;main_M.c: 177:         if (linea == 2){
+"189
+[; ;main_M.c: 189:         if (linea == 2){
 [e $ ! == -> _linea `i -> 2 `i 153  ]
 {
-"179
-[; ;main_M.c: 179:             PORTAbits.RA0 = 0;
+"191
+[; ;main_M.c: 191:             PORTAbits.RA0 = 0;
 [e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
-"180
-[; ;main_M.c: 180:             PORTAbits.RA1 = 0;
+"192
+[; ;main_M.c: 192:             PORTAbits.RA1 = 0;
 [e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
-"181
-[; ;main_M.c: 181:             PORTAbits.RA2 = 1;
+"193
+[; ;main_M.c: 193:             PORTAbits.RA2 = 1;
 [e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
-"182
-[; ;main_M.c: 182:             PORTAbits.RA3 = 0;
+"194
+[; ;main_M.c: 194:             PORTAbits.RA3 = 0;
 [e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
-"183
-[; ;main_M.c: 183:             Lcd_Set_Cursor_4bits(2,16);
+"195
+[; ;main_M.c: 195:             Lcd_Set_Cursor_4bits(2,16);
 [e ( _Lcd_Set_Cursor_4bits (2 , -> -> 2 `i `uc -> -> 16 `i `uc ]
-"184
-[; ;main_M.c: 184:             Lcd_Write_String_4bits("!");
+"196
+[; ;main_M.c: 196:             Lcd_Write_String_4bits("!");
 [e ( _Lcd_Write_String_4bits (1 :s 11C ]
-"186
-[; ;main_M.c: 186:         }
+"198
+[; ;main_M.c: 198:         }
 }
 [e :U 153 ]
-"188
-[; ;main_M.c: 188:         _delay((unsigned long)((10)*(8000000/4000.0)));
+"200
+[; ;main_M.c: 200:         _delay((unsigned long)((10)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"193
-[; ;main_M.c: 193:     }
+"205
+[; ;main_M.c: 205:     }
 }
 [e :U 140 ]
 [e $U 141  ]
 [e :U 142 ]
-"194
-[; ;main_M.c: 194:     return;
+"206
+[; ;main_M.c: 206:     return;
 [e $UE 139  ]
-"195
-[; ;main_M.c: 195: }
+"207
+[; ;main_M.c: 207: }
 [e :UE 139 ]
 }
-"201
-[; ;main_M.c: 201: void setup (void){
+"213
+[; ;main_M.c: 213: void setup (void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"203
-[; ;main_M.c: 203:     ANSEL = 0;
+"215
+[; ;main_M.c: 215:     ANSEL = 0;
 [e = _ANSEL -> -> 0 `i `uc ]
-"204
-[; ;main_M.c: 204:     ANSELH = 0;
-[e = _ANSELH -> -> 0 `i `uc ]
-"206
-[; ;main_M.c: 206:     TRISA = 0;
-[e = _TRISA -> -> 0 `i `uc ]
-"207
-[; ;main_M.c: 207:     TRISB = 0b00000000;
-[e = _TRISB -> -> 0 `i `uc ]
-"208
-[; ;main_M.c: 208:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
 "216
-[; ;main_M.c: 216:     PORTA = 0;
-[e = _PORTA -> -> 0 `i `uc ]
-"217
-[; ;main_M.c: 217:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;main_M.c: 216:     ANSELH = 0;
+[e = _ANSELH -> -> 0 `i `uc ]
 "218
-[; ;main_M.c: 218:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;main_M.c: 218:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
+"219
+[; ;main_M.c: 219:     TRISB = 0b00000000;
+[e = _TRISB -> -> 0 `i `uc ]
 "220
-[; ;main_M.c: 220:     I2C_Master_Init(100000);
-[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
-"221
-[; ;main_M.c: 221:     setupINTOSC(FOSC_8MHZ);
-[e ( _setupINTOSC (1 . `E1349 0 ]
-"222
-[; ;main_M.c: 222:     Lcd_Init_4bits();
-[e ( _Lcd_Init_4bits ..  ]
+[; ;main_M.c: 220:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "228
-[; ;main_M.c: 228: }
+[; ;main_M.c: 228:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
+"229
+[; ;main_M.c: 229:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
+"230
+[; ;main_M.c: 230:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"232
+[; ;main_M.c: 232:     I2C_Master_Init(100000);
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+"233
+[; ;main_M.c: 233:     setupINTOSC(FOSC_8MHZ);
+[e ( _setupINTOSC (1 . `E1349 0 ]
+"234
+[; ;main_M.c: 234:     Lcd_Init_4bits();
+[e ( _Lcd_Init_4bits ..  ]
+"240
+[; ;main_M.c: 240: }
 [e :UE 154 ]
 }
 [p f _sprintf 8462336 ]

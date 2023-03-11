@@ -58,7 +58,7 @@
 #define D7 RD7
 
 void setup(void);
-
+// se definen las variables
 float distancia;
 uint8_t dis;
 uint8_t color;
@@ -69,9 +69,10 @@ char distanciaLCD[16];
 void main(void) {
   
     __delay_ms(500);
+    // se inician los puertos y el oscilador
     setup();
+    // se inicia el LCD y los motores
     Lcd_Clear_4bits();
-    
     setupMotores();
     setupPWM();
     
@@ -81,63 +82,81 @@ void main(void) {
 
     while(1)
     {   
+        // Se mandan a traer los datos de los slaves
 //        __delay_ms(500);
-        I2C_Master_Start();
-        I2C_Master_Write(0x11);
+        I2C_Master_Start();     // se inicia la comunicacion
+        I2C_Master_Write(0x11); //direccion del pic1
         distancia = I2C_Master_Read(0);
         I2C_Master_Stop();
-        __delay_ms(200);
-        I2C_Master_Start();
-        I2C_Master_Write(0x31);
+        __delay_ms(10);
+        I2C_Master_Start();     // se inicia la comunicacion
+        I2C_Master_Write(0x31); // Direccion del pic 2
         color = I2C_Master_Read(0);
         I2C_Master_Stop();
-        __delay_ms(200);
-        I2C_Master_Start();
-        I2C_Master_Write(0x21);
+        __delay_ms(10);
+        I2C_Master_Start();     // se inicia la comunicacion
+        I2C_Master_Write(0x21); // Direccion del pic3
         linea = I2C_Master_Read(0);
+        I2C_Master_Stop();      
+        __delay_ms(10);
+        
+        
+        //Enviamos información al ESP32
+        I2C_Master_Start();
+        I2C_Master_Write(0x90);
+        I2C_Master_Write(color);
+        I2C_Master_Write(distancia);
+        I2C_Master_Write(linea);
         I2C_Master_Stop();
-        __delay_ms(200);
+        __delay_ms(10);
+        
+        
         //distancia = medir_distancia();
-        sprintf(distanciaLCD, "Distancia: %.1f", distancia);
-
+        // Se convierte la variable de distancia en un string
+        sprintf(distanciaLCD, "Distancia: %.1f", distancia);    
+        //se escribe el valor de la distancia en el LCD
         Lcd_Set_Cursor_4bits(1,1);
         Lcd_Write_String_4bits(distanciaLCD);
         
-        
+        // se verifica si no esta leyendo el sensor algun color
         if (color == 0){
             Lcd_Set_Cursor_4bits(2,1);
-            Lcd_Write_String_4bits("NADA");
+            Lcd_Write_String_4bits("NADA"); // no hay ningun color
 
-        } // Botón en PORTB0
+        } 
             
+        // se verifica si no esta leyendo el verde
         else if (color == 1){
 
             CCPR1L = 62;  // 25% de ciclo de trabajo (Velocidad Baja)
             CCPR2L = 62;
             Lcd_Set_Cursor_4bits(2,1);
-            Lcd_Write_String_4bits("VERDE");
+            Lcd_Write_String_4bits("VERDE");   // se escribe que se lee el verde
         } // Botón en PORTB0
 
+        // se verifica si no esta leyendo el azul
         else if (color == 2){
 
             CCPR1L = 125; // 50% de ciclo de trabajo (Velocidad Media)
             CCPR2L = 125;
             Lcd_Clear_4bits();
             Lcd_Set_Cursor_4bits(2,1);
-            Lcd_Write_String_4bits("AZUL");
+            Lcd_Write_String_4bits("AZUL");     // se escribe que se lee el azul
 
         } // Botón en PORTB1
 
+        // se verifica si no esta leyendo el azul
         else if (color == 3){
 
             CCPR1L = 187; // 75% de ciclo de trabajo (Velocidad Alta)
             CCPR2L = 187;
             Lcd_Clear_4bits();
             Lcd_Set_Cursor_4bits(2,1);
-            Lcd_Write_String_4bits("ROJO");
+            Lcd_Write_String_4bits("ROJO");     // se escribe que se lee el rojo
 
-        } // Botón en PORTB2
+        }
 
+        // se verifica que la distancia sea menor de 5 cm
         if (distancia < 5){
 
             PORTAbits.RA0 = 0; // Se configuran en alto todos los pines IN para forzarlo a detenerse
@@ -145,12 +164,13 @@ void main(void) {
             PORTAbits.RA2 = 0;
             PORTAbits.RA3 = 0;
             Lcd_Set_Cursor_4bits(2,7);
-            Lcd_Write_String_4bits("TAPADO");  
+            Lcd_Write_String_4bits("TAPADO");  // se escribe que el camino esta tapado
             Lcd_Set_Cursor_4bits(2,16);
-            Lcd_Write_String_4bits("N");  
+            Lcd_Write_String_4bits("N");      // indiica que ningun sensor de linea esta cubierto
 
-        } // Botón en PORTB3
+        } 
 
+        // se verifica que la distancia sea mayor de 5 cm
         if (distancia > 5){
 
             PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante
@@ -158,30 +178,30 @@ void main(void) {
             PORTAbits.RA2 = 1;
             PORTAbits.RA3 = 0;
             Lcd_Set_Cursor_4bits(2,7);
-            Lcd_Write_String_4bits("LIBRE");  
+            Lcd_Write_String_4bits("LIBRE");     // se escribe que el camino esta libre
             Lcd_Set_Cursor_4bits(2,16);
-            Lcd_Write_String_4bits("N");  
+            Lcd_Write_String_4bits("N");        // indiica que ningun sensor de linea esta cubierto
         } // Botón en PORTB4
 
         if (linea == 1){
 
-            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante
+            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante solo el motor derecho
             PORTAbits.RA1 = 1;
             PORTAbits.RA2 = 0;
             PORTAbits.RA3 = 0;
             Lcd_Set_Cursor_4bits(2,16);
-            Lcd_Write_String_4bits("!");
+            Lcd_Write_String_4bits("!");    // indiica que un sensor de linea esta cubierto
 
         } // Botón en PORTB4
         
         if (linea == 2){
 
-            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante
+            PORTAbits.RA0 = 0; // Se configuran los pines IN para ir hacia adelante solo el motor izquierdo
             PORTAbits.RA1 = 0;
             PORTAbits.RA2 = 1;
             PORTAbits.RA3 = 0;
             Lcd_Set_Cursor_4bits(2,16);
-            Lcd_Write_String_4bits("!");
+            Lcd_Write_String_4bits("!");   // indiica que un sensor de linea esta cubierto
 
         } // Botón en PORTB4
         // Esperar un poco antes de leer los botones de nuevo

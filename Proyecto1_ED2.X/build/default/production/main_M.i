@@ -2891,17 +2891,29 @@ void main(void) {
         I2C_Master_Write(0x11);
         distancia = I2C_Master_Read(0);
         I2C_Master_Stop();
-        _delay((unsigned long)((200)*(8000000/4000.0)));
+        _delay((unsigned long)((10)*(8000000/4000.0)));
         I2C_Master_Start();
         I2C_Master_Write(0x31);
         color = I2C_Master_Read(0);
         I2C_Master_Stop();
-        _delay((unsigned long)((200)*(8000000/4000.0)));
+        _delay((unsigned long)((10)*(8000000/4000.0)));
         I2C_Master_Start();
         I2C_Master_Write(0x21);
         linea = I2C_Master_Read(0);
         I2C_Master_Stop();
-        _delay((unsigned long)((200)*(8000000/4000.0)));
+        _delay((unsigned long)((10)*(8000000/4000.0)));
+
+
+
+        I2C_Master_Start();
+        I2C_Master_Write(0x90);
+        I2C_Master_Write(color);
+        I2C_Master_Write(distancia);
+        I2C_Master_Write(linea);
+        I2C_Master_Stop();
+        _delay((unsigned long)((10)*(8000000/4000.0)));
+
+
 
         sprintf(distanciaLCD, "Distancia: %.1f", distancia);
 
